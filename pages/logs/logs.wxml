@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view class='select'>请选择你的性别</view>
+
+<view class='gender'>
+  <image class='nan' src='../image/nanS.png'></image>
+  <image class='nv' src='../image/nvS.png'></image>
+</view>
+<view class='wenZ'>
+  <view class='man'>男</view>
+  <view class='woman'>女</view>
+</view>
+<!-- <view class='xiaB'>下一步</view> -->
+<navigator  class='xiaB' url="../birthday/birthday" hover-class="navigator-hover">下一步</navigator>
