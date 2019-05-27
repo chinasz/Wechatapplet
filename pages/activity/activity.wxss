@@ -1,0 +1,87 @@
+image{
+  display: block;
+}
+.dingB{
+  width: 100%;
+  height: 150rpx;
+}
+.logo{
+  width: 100%;
+  height: 200rpx;
+}
+.back{
+  width: 100%;
+  height: 1030rpx;
+}
+.immediately{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  font-size: 50rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 300rpx;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  background: linear-gradient(306deg, #ec49f0, #2c90ff);
+}
+.candidate{
+  width: 100%;
+  height: 50rpx;
+  position: absolute;
+  top: 70%;
+  left: 0;
+}
+.text{
+  width: 100%;
+  font-size: 25rpx;
+  color: #8165a2;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  font-weight: 600;
+}
+.diB{
+  width: 100%;
+  background: #FFF;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+}
+.diB .diB_L{
+  width: 50%;
+  height: 100rpx;
+  text-align: center;
+  float: left;
+}
+.diB .diB_L .shouY{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.diB .diB_L .weiZ{
+  width: 100%;
+  font-size: 25rpx;
+  color: #000;
+}
+.diB .diB_R{
+  width: 50%;
+  height: 100rpx;
+  text-align: center;
+  float: left;
+}
+.diB .diB_R .shouY{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.diB .diB_R .weiZ{
+  width: 100%;
+  font-size: 25rpx;
+  color: #b7b6bb;
+}

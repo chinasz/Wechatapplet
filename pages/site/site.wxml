@@ -5,7 +5,7 @@
   <view class='xuanX_R'>请选择></view>
 </view>
 <!-- <view class='kuaiJ'>微信用户快捷登录</view> -->
-<navigator  class='kuaiJ' url="../activity/activity" hover-class="navigator-hover">微信用户快捷登录</navigator>
+<navigator  class='kuaiJ' url="/pages/activity/activity" hover-class="navigator-hover" open-type="reLaunch">微信用户快捷登录</navigator>
 <view class='dianD'>
   <view class='dianJ'>点击登录，即表示已阅读并同意</view>
   <view class='law '>《法律与隐私政策》</view>

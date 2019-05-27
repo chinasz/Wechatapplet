@@ -1,0 +1,81 @@
+<!--mine.wxml-->
+<image class='back' src='../image/back.png'></image>
+<view class='rongQ'>
+  <image class='touX' src='../image/touX.png'></image>
+  <view class='rongQ_C'>
+    <view class='niC'>原来啊。</view>
+    <view class='cpH'>CP号：4519504</view>
+  </view>
+  <view class='grzy'>个人主页</view>
+</view>
+
+<view class='tiY'>
+  <view class='lianA'>恋爱体验卡</view>
+  <view class='zhanK'>></view>
+</view>
+
+<view class='suoD'>
+  <view class='suoD_L'>
+    <image class='card' src='../image/card.png'></image>
+    <view class='card_T'>锁定CP卡</view>
+  </view>
+  <view class='suoD_R'>
+    <image class='card' src='../image/wxCard.png'></image>
+    <view class='card_R'>
+      <view class='card_T'>解锁微信获取次数</view>
+      <view class='card_T1'>立即获取</view>
+    </view>
+  </view>
+</view>
+
+<view class='xiangQ'>
+  <image class='geR' src='../image/geR.png'></image>
+  <view class='text'>个人资料</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ'>
+  <image class='geR' src='../image/yinS.png'></image>
+  <view class='text'>音色测评</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ'>
+  <image class='geR' src='../image/biaoQ.png'></image>
+  <view class='text'>个性标签</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ'>
+  <image class='geR' src='../image/QQQ.png'></image>
+  <view class='text'>走心问答</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ'>
+  <image class='geR' src='../image/shaiX.png'></image>
+  <view class='text'>偏好设置</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ'>
+  <image class='geR' src='../image/jiL.png'></image>
+  <view class='text'>匹配记录</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+
+
+<view class='xiangQ'>
+  <image class='geR' src='../image/help.png'></image>
+  <view class='text'>帮助与反馈</view>
+  <image class='zhanK' src='../image/zhanK.png'></image>
+</view>
+<view class='xiangQ' style='width:100%;height:150rpx;'>
+  
+</view>
+
+<view class='diB'>
+  <navigator class='diB_L' url="../activity/activity" hover-class="navigator-hover">
+    <image class='shouY' src='../image/shouye.png' style='border-radius: 0;'></image>
+    <view class='weiZ'>首页</view>
+  </navigator>
+  <navigator class='diB_R'>
+    <image class='shouY' src='../image/my.png'></image>
+    <view class='weiZ'>我的</view>
+  </navigator>
+</view>

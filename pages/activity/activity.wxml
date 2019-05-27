@@ -1,1 +1,7 @@
 <!--activity.wxml-->
+<image class='dingB' src='../image/ding.png'></image>
+<image class='logo' src='../image/logo.png'></image>
+<image class='back' src='../image/ding.png'></image>
+<view class='immediately'>立即刷新</view>
+<image class='candidate' src='../image/houX.png'></image>
+<view class='text'>(本周五晚8点开始确定CP)</view>
