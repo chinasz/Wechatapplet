@@ -11,7 +11,16 @@ Page({
     animationStatus: false
   },
   onLoad: function (options) {
-    recodeClick();
+    this.setData({
+      animationStatus: true
+    })
+    this.animationFun('animationData1')
+    setTimeout(() => {
+      this.animationFun('animationData2')
+    }, 500)
+    setTimeout(() => {
+      this.animationRest()
+    }, 1000)
   },
   onReady: function () {
 

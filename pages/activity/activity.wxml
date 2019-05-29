@@ -15,18 +15,12 @@
 <image class='back' src='../image/ding.png'></image>
 <!-- <view class='immediately'>立即刷新</view> -->
 <view class="myRecode">
-  <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+  <view class="recode"></view>
+  <view class="recode"></view>
+  <view class="recode"></view>
+  <view class="recode">
     <text>立即刷新</text>
-    <view class="ripple"></view>
-    <view class="ripple" animation="{{animationData1}}"></view>
-    <view class="ripple" animation="{{animationData2}}"></view>
   </view>
 </view>
-
-
-
-
-
-
 <image class='candidate' src='../image/houX.png'></image>
 <view class='text'>(本周五晚8点开始确定CP)</view>
