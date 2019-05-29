@@ -69,13 +69,3 @@
   
 </view>
 
-<view class='diB'>
-  <navigator class='diB_L' url="../activity/activity" hover-class="navigator-hover">
-    <image class='shouY' src='../image/shouye.png' style='border-radius: 0;'></image>
-    <view class='weiZ'>首页</view>
-  </navigator>
-  <navigator class='diB_R'>
-    <image class='shouY' src='../image/my.png'></image>
-    <view class='weiZ'>我的</view>
-  </navigator>
-</view>

@@ -1,7 +1,32 @@
 <!--activity.wxml-->
+<view class='shaiX'>
+  <image class='sxT' src='../image/shaixuan.png'></image>
+</view>
+<view class='wenZ'>心动区</view>
+<view class='heartbeat'>
+  <image class='touxiang' src='../image/touX.png'></image>
+</view>
+<view class='wenZ1'>观察期</view>
+<view class='heartbeat1'>
+  <image class='touxiang' src='../image/touX.png'></image>
+</view>
 <image class='dingB' src='../image/ding.png'></image>
 <image class='logo' src='../image/logo.png'></image>
 <image class='back' src='../image/ding.png'></image>
-<view class='immediately'>立即刷新</view>
+<!-- <view class='immediately'>立即刷新</view> -->
+<view class="myRecode">
+  <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+    <text>立即刷新</text>
+    <view class="ripple"></view>
+    <view class="ripple" animation="{{animationData1}}"></view>
+    <view class="ripple" animation="{{animationData2}}"></view>
+  </view>
+</view>
+
+
+
+
+
+
 <image class='candidate' src='../image/houX.png'></image>
 <view class='text'>(本周五晚8点开始确定CP)</view>
