@@ -13,20 +13,36 @@ image{
 }
 
 .gender{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 15%;
   overflow: hidden;
 }
-.gender .nan{
-  width: 100rpx;
-  height: 100rpx;
+/* .gender .dianJ{
+  width: 130rpx;
+  height: 130rpx;
   float: left;
+  border-radius: 50%;
+  background: blue;
+} */
+/* .gender .dianJ1{
+  width: 130rpx;
+  height: 130rpx;
+  float: right;
+  border-radius: 50%;
+  background: blue;
+} */
+.gender .nan{
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  border-radius: 50%;
 }
 .gender .nv{
-  width: 100rpx;
-  height: 100rpx;
+  width: 150rpx;
+  height: 150rpx;
   float: right;
+  border-radius: 50%;
 }
 .wenZ{
   width: 50%;
@@ -55,6 +71,6 @@ image{
   line-height: 100rpx;
   margin: 0 auto;
   border-radius: 50rpx;
-  background: #f5f5f5;
+  background: #4090f7;
   margin-top: 15%;
 }

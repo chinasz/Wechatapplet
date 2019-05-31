@@ -1,8 +1,16 @@
 <!--birthday.wxml-->
 <view class='birthday'>请选择你的生日</view>
-<view class='xuanX'>
-  <view class='xuanX_L'>您的出生年月</view>
-  <view class='xuanX_R'>请选择></view>
-</view>
 
+
+
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="2020-1-1" bindchange="bindDateChange">  
+    <view class="picker">  
+      您的出生年月: 
+      <view class='picker1'>
+        {{dates}}
+      </view>  
+    </view>  
+  </picker>  
+</view> 
 <navigator  class='xiaB' url="../site/site" hover-class="navigator-hover">下一步</navigator>
