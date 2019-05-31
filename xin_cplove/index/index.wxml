@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class='bigBox'>
+  <image class='logo' src='../image/logo.png'></image>
+  <image class='title' src='../image/title.png'></image>
+  <image class='zhongJ' src='../image/zhongJ.png'></image>
+  <image class='diB' src='../image/diB.png'></image>
+  <!-- <view class='canY'>立即参与</view> -->
+  <button  class='canY' hover-class="navigator-hover" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+  立即参与
+  </button>
+</view>
