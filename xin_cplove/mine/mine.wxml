@@ -1,6 +1,6 @@
 <!--mine.wxml-->
 <image class='back' src='../image/back.png'>
-  <view class='tiY'>
+  <view class='tiY' bindtap='go6'>
     <view class='lianA'>恋爱体验卡</view>
     <view class='zhanK'>></view>
   </view>
@@ -46,7 +46,7 @@
     <view class='text'>走心问答</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-  <view class='xiangQ'>
+  <view class='xiangQ' bindtap='go4'>
     <image class='geR' src='../image/shaiX.png'></image>
     <view class='text'>偏好设置</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
@@ -58,7 +58,7 @@
   </view>
 
 
-  <view class='xiangQ'>
+  <view class='xiangQ' bindtap='go5'>
     <image class='geR' src='../image/help.png'></image>
     <view class='text'>帮助与反馈</view>
     <image class='zhanK' src='../image/zhanK.png'></image>

@@ -1,0 +1,54 @@
+/*predilection.wxss*/
+.suoZ{
+  width: 100%;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-left: 5%;
+}
+.xuanX{
+  width: 100%;
+  height: 150rpx;
+  margin-top: 5%;
+}
+.xuanX .xuanX_L{
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  font-size: 35rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  background: #614af0;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.xuanX .xuanX_R{
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  font-size: 35rpx;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  background: #FFF;
+  float: left;
+}
+.nianL{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 5%;
+}
+.nianL .age{
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #000;
+  margin-left: 5%;
+  float: left;
+}
+.nianL .quJ{
+  font-size: 35rpx;
+  color: #000;
+  margin-right: 5%;
+  float: right;
+}
