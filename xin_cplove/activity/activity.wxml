@@ -6,10 +6,7 @@
 <view class='heartbeat'>
   <image class='touxiang' src='../image/touX.png'></image>
 </view>
-<view class='wenZ1'>观察期</view>
-<view class='heartbeat1'>
-  <image class='touxiang' src='../image/touX.png'></image>
-</view>
+
 <image class='dingB' src='../image/ding.png'></image>
 <image class='logo' src='../image/logo.png'></image>
 <image class='back' src='../image/ding.png'></image>

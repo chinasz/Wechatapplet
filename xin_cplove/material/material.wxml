@@ -1,0 +1,55 @@
+<!--material.wxml-->
+<view class='touX'>
+  <text class='tex'>头像</text>
+  <text class='tex1'>></text>
+  <image class='tuP' src='../image/touX.png'></image>
+</view>
+<view class='touX'>
+  <text class='tex'>性别</text>
+  <text class='tex1'>男 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>昵称</text>
+  <text class='tex1'>原来。 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>生日</text>
+  <text class='tex1'>1997-02-07 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>所在地</text>
+  <text class='tex1'>陕西 西安 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>家乡所在地</text>
+  <text class='tex1'>请选择 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>学校名称</text>
+  <text class='tex1'>点击输入 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>学校类型</text>
+  <text class='tex1'>学院/大学 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>学籍状态</text>
+  <text class='tex1'>工作党 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>手机号</text>
+  <text class='tex1'>18292601779 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>微信号</text>
+  <text class='tex1'>18292601779 ></text>
+</view>
+<view class='touX'>
+  <text class='tex'>微信号</text>
+  <text class='tex1'>18292601779 ></text>
+</view>
+
+
+<view class='diB'>
+  保存修改
+</view>

@@ -1,0 +1,60 @@
+/*mindful.wxss*/
+image{
+  display: block;
+}
+.dingB{
+  width: 100%;
+  height: 300rpx;
+  background: #29065a;
+  overflow: hidden;
+}
+.dingB .zouX{
+  width: 100%;
+  font-size: 50rpx;
+  color: #FFF;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 2%;
+}
+.dingB .QA{
+  width: 100%;
+  font-size: 30rpx;
+  color: #FFF;
+  text-align: center;
+}
+.tiM{
+  width: 100%;
+  height: 200rpx;
+  overflow: hidden;
+}
+.tiM .tiM_T{
+  width: 90%;
+  margin: 5% auto;
+  overflow: hidden;
+}
+.tiM .tiM_T .tuB{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  float: left;
+}
+.tiM .tiM_T .tex{
+  font-size: 35rpx;
+  color: #000;
+  margin-left: 5%;
+}
+.tiM .tiM_B{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tiM .tiM_B .tianJ{
+  font-size: 30rpx;
+  color: #b7b6bb;
+  float: left;
+}
+.tiM .tiM_B .zhanK{
+  font-size: 35rpx;
+  color: #b7b6bb;
+  float: right;
+}

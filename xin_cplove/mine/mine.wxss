@@ -1,10 +1,16 @@
-
+/**mine.wxss**/
 image{
   display: block;
 }
 .back{
-  width: 100%;
+  width: 200%;
   height: 700rpx;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  top:-12%;
+  left: -45%;
+  overflow-y: hidden;
 }
 .rongQ{
   width: 100%;
@@ -49,14 +55,13 @@ image{
   margin-top: 5%;
 }
 .tiY{
-  width: 90%;
+  width: 47%;
   height: 200rpx;
-  margin: 0 auto;
   background: linear-gradient(186deg, #4700fc, #896cfa);
   border-radius: 20rpx;
   position: absolute;
-  top: 36%;
-  left: 5%;
+  top: 71%;
+  left: 24%;
 }
 .tiY .lianA{
   font-size: 35rpx;
@@ -97,7 +102,7 @@ image{
 .suoD .suoD_R{
   width: 50%;
   height: 200rpx;
-  float: left;
+  margin: 0 auto;
 }
 .suoD .suoD_R .card{
   width: 104rpx;

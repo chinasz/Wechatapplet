@@ -5,7 +5,11 @@
     "xin_cplove/birthday/birthday",
     "xin_cplove/site/site",
     "xin_cplove/activity/activity",
-    "xin_cplove/mine/mine"
+    "xin_cplove/mine/mine",
+    "xin_cplove/material/material",
+    "xin_cplove/tone/tone",
+    "xin_cplove/label/label",
+    "xin_cplove/mindful/mindful"
   ],
   "window": {
     "backgroundTextStyle": "light",

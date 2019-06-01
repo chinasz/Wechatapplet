@@ -1,0 +1,60 @@
+/*label.wxss*/
+.dingB{
+  width: 80%;
+  height: 60rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1b153b;
+  text-align: center;
+  line-height: 60rpx;
+  background: #f5f5f5;
+  border-radius: 30rpx;
+}
+.xuanX{
+  width: 100%;
+  margin-top: 10%;
+  overflow: hidden;
+}
+.xuanX .waiZ{
+  font-size: 50rpx;
+  color: #6448f2;
+  float: left;
+  margin-left: 5%;
+}
+.xuanX .neiZ{
+  font-size: 40rpx;
+  color: #000;
+  float: left;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.xuanZ{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 3%;
+}
+.xuanZ .dianJ{
+  height: 65rpx;
+  font-size: 35rpx;
+  color: #150857;
+  text-align: center;
+  line-height: 65rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #f5f5f5;
+  margin: 3% 4%;
+  float: left;
+  border-radius: 50rpx;
+}
+.baoC{
+  width: 80%;
+  height: 100rpx;
+  background: #614af0;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  font-size: 35rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top: 30%;
+}
