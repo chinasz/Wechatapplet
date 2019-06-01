@@ -1,0 +1,65 @@
+<!--mindful.wxml-->
+<view class='dingB'>
+  <view class='zouX'>走心问答</view>
+  <view class='QA'>Q&A</view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>什么样的CP会吸引你</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>你觉得最浪漫的事情是</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>描述自己的外貌</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>成长经历</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>对未来的规划</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>
+<view class='tiM'>
+  <view class='tiM_T'>
+    <image class='tuB' src='../image/wenD.png'></image>
+    <text class='tex'>去过的地方</text>
+  </view>
+  <view class='tiM_B'>
+    <text class='tianJ'>添加回答</text>
+    <text class='zhanK'>></text>
+  </view>
+</view>

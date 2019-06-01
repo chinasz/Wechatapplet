@@ -1,0 +1,86 @@
+<!--label.wxml-->
+<view class='dingB'>
+  “你觉得那些标签符合你
+</view>
+<view class='xuanX'>
+  <view class='waiZ'>
+  外在
+  </view>
+  <view class='neiZ'>
+    内在
+  </view>
+  <view class='neiZ'>
+    爱好
+  </view>
+</view>
+
+<view class='xuanZ'>
+  <view class='dianJ'>
+    +
+  </view>
+  <view class='dianJ'>
+    高
+  </view>
+  <view class='dianJ'>
+    瘦
+  </view>
+  <view class='dianJ'>
+    高颜值
+  </view>
+</view>
+<view class='xuanZ'>
+  <view class='dianJ'>
+    有腹肌
+  </view>
+  <view class='dianJ'>
+    医护
+  </view>
+  <view class='dianJ'>
+    军警
+  </view>
+  <view class='dianJ'>
+    公关
+  </view>
+</view>
+<view class='xuanZ'>
+  <view class='dianJ'>
+    行政
+  </view>
+  <view class='dianJ'>
+    工程师
+  </view>
+  <view class='dianJ'>
+    产品
+  </view>
+  <view class='dianJ'>
+    传媒
+  </view>
+</view>
+<view class='xuanZ'>
+  <view class='dianJ'>
+    财会
+  </view>
+  <view class='dianJ'>
+    金融
+  </view>
+  <view class='dianJ'>
+    销售
+  </view>
+  <view class='dianJ'>
+    设计师
+  </view>
+</view>
+<view class='xuanZ'>
+  <view class='dianJ'>
+    公务员
+  </view>
+  <view class='dianJ'>
+    教师
+  </view>
+  <view class='dianJ'>
+    管理
+  </view>
+</view>
+
+
+<view class='baoC'>保存</view>
