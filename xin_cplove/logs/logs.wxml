@@ -1,9 +1,9 @@
 <!--logs.wxml-->
 <view class='select'>请选择你的性别</view>
-
 <view class='gender'>
     <image class='nan' bindtap="daimaiClick" data-sex="1" src='{{daimaisrc}}'></image>
     <image class='nv' bindtap="daimaiClick" data-sex="0" src='{{daimaisrc1}}'></image>
+
 </view>
 <view class='wenZ'>
   <view class='man'>男</view>

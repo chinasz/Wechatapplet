@@ -9,7 +9,10 @@
     "xin_cplove/material/material",
     "xin_cplove/tone/tone",
     "xin_cplove/label/label",
-    "xin_cplove/mindful/mindful"
+    "xin_cplove/mindful/mindful",
+    "xin_cplove/predilection/predilection",
+    "xin_cplove/feedback/feedback",
+    "xin_cplove/experience/experience"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -9,5 +9,6 @@ App({
   globalData: {
     hasuser:false,
     mid:null,
+    selectInfo:{},
   }
 })

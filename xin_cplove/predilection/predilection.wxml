@@ -1,0 +1,23 @@
+<!--predilection.wxml-->
+<view class='suoZ'>对方所在城市</view>
+<view class='xuanX'>
+  <view class='xuanX_L'>只要同城</view>
+  <view class='xuanX_R'>都可以</view>
+</view>
+<view class='suoZ'>对方性别</view>
+<view class='xuanX'>
+  <view class='xuanX_L'>小哥哥</view>
+  <view class='xuanX_R'>小姐姐</view>
+</view>
+<view class='nianL'>
+  <text class='age'>年龄</text>
+  <text class='quJ'>17-23 ></text>
+</view>
+<view class='nianL'>
+  <text class='age'>高级筛选</text>
+  <text class='quJ'>></text>
+</view>
+<view class='nianL'>
+  <text class='age'>自动放宽偏好</text>
+  <text class='quJ'>></text>
+</view>

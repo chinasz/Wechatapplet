@@ -25,6 +25,7 @@ Page({
     }else{
       wx.navigateTo({
         url: '../birthday/birthday',
+
       })
     }
 

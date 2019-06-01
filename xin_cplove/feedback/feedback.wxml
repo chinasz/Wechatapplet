@@ -1,0 +1,13 @@
+<!--feedback.wxml-->
+<view class='malfunction'>
+  <image class='guzhang' src='../image/guzhang.png'></image>
+  <view class='tex'>报告故障</view>
+</view>
+<view class='malfunction'>
+  <image class='guzhang' src='../image/wenH.png'></image>
+  <view class='tex'>提交建议</view>
+</view>
+<view class='malfunction'>
+  <image class='guzhang' src='../image/ganT.png'></image>
+  <view class='tex'>联系客服</view>
+</view>
