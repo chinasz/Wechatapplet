@@ -1,13 +1,8 @@
 <!--site.wxml-->
 <view class='birthday'>请选择所在城市</view>
-<!-- <view class='xuanX'>
-  <view class='xuanX_L'>您所在的城市</view>
-  <view class='xuanX_R'>请选择></view>
-</view> -->
+<view class="tui-picker-content"> <view class="tui-picker-name" style='float:left; font-size:30rpx;margin-left:10%;'>您所在的城市</view> <picker bindchange="changeRegin" mode = "region" value=""> <view class="tui-picker-detail" style='float:right; font-size:30rpx;margin-right:5%;'>{{region[0]}}  {{region[1]}}  {{region[2]}}</view> </picker></view>
 
-<view class="tui-picker-content"> <view class="tui-picker-name" style='float:left; font-size:30rpx;margin-left:10%;'>您所在的城市</view> <picker bindchange="changeRegin" mode = "region" value="{{region}}"> <view class="tui-picker-detail" style='float:right; font-size:30rpx;margin-right:5%;'>{{region[0]}}  {{region[1]}}  {{region[2]}}</view> </picker></view>
-
-<navigator  class='kuaiJ' url="../activity/activity" hover-class="navigator-hover" open-type="reLaunch">微信用户快捷登录</navigator>
+<button class='kuaiJ' open-type="getPhoneNumber" bindgetphonenumber='goIndex' hover-class="navigator-hover">微信用户快捷登录</button>
 <view class='dianD'>
   <view class='dianJ'>点击登录，即表示已阅读并同意</view>
   <view class='law '>《法律与隐私政策》</view>
