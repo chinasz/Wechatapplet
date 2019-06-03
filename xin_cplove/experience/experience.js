@@ -7,7 +7,7 @@ Page({
   data: {
     imgUrls: [
       '../image/1.png',
-      '../image/2png'
+      '../image/2.png'
     ],
     indicatorDots: true, // 是否显示面板指示点
     autoplay: true,      // 是否自动切换
