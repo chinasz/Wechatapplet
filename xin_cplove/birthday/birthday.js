@@ -1,40 +1,27 @@
 //birthday.js
-const util = require('../../utils/util.js')
-
+const app =getApp();
 Page({
   data: {
-    logs: []
-  },
-  data: {
     dates: '请选择>',
-    times: '12:00',
-    objectArray: ['中国', '英国', '美国'],
-    index: 0,
-  },
-  bindTimeChange: function (e) {
-    console.log("谁哦按")
-    this.setData({
-      times: e.detail.value
-    })
+    times: { start: "1970-01-01", end: new app.util.date().dateToStr('yyyy-MM-dd')},
   },
   //  点击日期组件确定事件  
   bindDateChange: function (e) {
-    console.log(e.detail.value)
+    app.globalData.selectInfo.birth = e.detail.value;
     this.setData({
       dates: e.detail.value
     })
   },
-  bindPickerChange: function (e) {
-    console.log(e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
+  selectSite:function(e){
+    if (!app.globalData.selectInfo.birth) {
+      app.util.message('请选择生日', '', 'error');
+    } else {
+      wx.navigateTo({
+        url: '../site/site',
+      })
+    }
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('birthday') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    
   }
 })

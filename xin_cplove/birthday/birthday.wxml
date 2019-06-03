@@ -1,10 +1,7 @@
 <!--birthday.wxml-->
 <view class='birthday'>请选择你的生日</view>
-
-
-
 <view class="section">  
-  <picker mode="date" value="{{date}}" start="1978-01-01" end="2020-1-1" bindchange="bindDateChange">  
+  <picker mode="date" value="{{app.globalData.birth}}" start="{{times.start}}" end="{{times.end}}" bindchange="bindDateChange">  
     <view class="picker">  
       您的出生年月: 
       <view class='picker1'>
@@ -13,4 +10,4 @@
     </view>  
   </picker>  
 </view> 
-<navigator  class='xiaB' url="../site/site" hover-class="navigator-hover">下一步</navigator>
+<button  class='xiaB' bindtap='selectSite' hover-class="navigator-hover">下一步</button>
