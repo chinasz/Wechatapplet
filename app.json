@@ -12,7 +12,13 @@
     "xin_cplove/mindful/mindful",
     "xin_cplove/predilection/predilection",
     "xin_cplove/feedback/feedback",
-    "xin_cplove/experience/experience"
+    "xin_cplove/experience/experience",
+    "xin_cplove/answer/answer",
+    "xin_cplove/romance/romance",
+    "xin_cplove/appearance/appearance",
+    "xin_cplove/grow/grow",
+    "xin_cplove/future/future",
+    "xin_cplove/advanced/advanced"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,12 +1,11 @@
 <!--logs.wxml-->
 <view class='select'>请选择你的性别</view>
-
 <view class='gender'>
-    <image class='nan' bindtap="daimaiClick" src='{{daimaisrc}}'></image>
-    <image class='nv' bindtap="daimaiClick" src='{{daimaisrc1}}'></image>
+    <image class='nan' bindtap="daimaiClick" data-sex="1" src='{{daimaisrc}}'></image>
+    <image class='nv' bindtap="daimaiClick" data-sex="0" src='{{daimaisrc1}}'></image>
 </view>
 <view class='wenZ'>
   <view class='man'>男</view>
   <view class='woman'>女</view>
 </view>
-<navigator  class='xiaB' url="../birthday/birthday" hover-class="navigator-hover">下一步</navigator>
+<button  class='xiaB' bindtap='selectDate' hover-class="navigator-hover">下一步</button>

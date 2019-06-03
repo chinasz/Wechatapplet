@@ -46,6 +46,7 @@
     <view class='text'>走心问答</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
+
   <view class='xiangQ' bindtap='go4'>
     <image class='geR' src='../image/shaiX.png'></image>
     <view class='text'>偏好设置</view>
@@ -64,9 +65,3 @@
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
 </view>
-
-
-<view class='xiangQ' style='width:100%;height:150rpx;'>
-  
-</view>
-

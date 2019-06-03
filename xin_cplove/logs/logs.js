@@ -1,42 +1,38 @@
-//logs.js
-const util = require('../../utils/util.js')
-
+var app = getApp();
 Page({
   data: {
-    logs: []
-  },
-
-  data: {
-
-    "daimaisrc": "../image/dianJ1.png",
+    "daimaisrc": "../image/nanS.png",
     "daimaisrc1": "../image/nvS.png",
-    cityName: "",
-    getChannelByCityId: "",
-
-    carName: "",
-    carId: ""
+    gender:1,
   },
 
 
   daimaiClick: function (e) {
-    console.log("-------d：" + this.data.daimaisrc);
-    if (this.data.daimaisrc == "../image/dianJ1.png") {
+    app.globalData.selectInfo.gender = e.currentTarget.dataset.sex;
+    if (e.currentTarget.dataset.sex == 1) {
+      this.setData({
+        daimaisrc: "../image/dianJ1.png",
+        daimaisrc1: "../image/nvS.png",
+      })
+    } else {
       this.setData({
         daimaisrc: "../image/nanS.png",
         daimaisrc1: "../image/dianJ2.png"
       })
-    } else {
-      this.setData({
-        daimaisrc: "../image/dianJ1.png",
-        daimaisrc1: "../image/nvS.png"
-      })
     }
   },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
+  selectDate:function(){
+    if (!app.globalData.selectInfo.gender){
+      app.util.message('请选择性别！','','error');
+    }else{
+      wx.navigateTo({
+        url: '../birthday/birthday',
+
       })
-    })
+    }
+
+  },
+  onLoad: function () {
+    
   }
 })

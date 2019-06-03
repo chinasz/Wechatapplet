@@ -3,84 +3,267 @@
   “你觉得那些标签符合你
 </view>
 <view class='xuanX'>
-  <view class='waiZ'>
+  <view class='{{currentData == 0 ? "tabBorer" : ""}} neiZ' data-current = "0" bindtap='checkCurrent'>
   外在
   </view>
-  <view class='neiZ'>
+  <view class='{{currentData == 1 ? "tabBorer" : ""}} neiZ' data-current = "1" bindtap='checkCurrent'>
     内在
   </view>
-  <view class='neiZ'>
+  <view class='{{currentData == 2 ? "tabBorer" : ""}} neiZ' data-current = "2" bindtap='checkCurrent'>
     爱好
   </view>
 </view>
 
-<view class='xuanZ'>
-  <view class='dianJ'>
-    +
-  </view>
-  <view class='dianJ'>
-    高
-  </view>
-  <view class='dianJ'>
-    瘦
-  </view>
-  <view class='dianJ'>
-    高颜值
-  </view>
-</view>
-<view class='xuanZ'>
-  <view class='dianJ'>
-    有腹肌
-  </view>
-  <view class='dianJ'>
-    医护
-  </view>
-  <view class='dianJ'>
-    军警
-  </view>
-  <view class='dianJ'>
-    公关
-  </view>
-</view>
-<view class='xuanZ'>
-  <view class='dianJ'>
-    行政
-  </view>
-  <view class='dianJ'>
-    工程师
-  </view>
-  <view class='dianJ'>
-    产品
-  </view>
-  <view class='dianJ'>
-    传媒
-  </view>
-</view>
-<view class='xuanZ'>
-  <view class='dianJ'>
-    财会
-  </view>
-  <view class='dianJ'>
-    金融
-  </view>
-  <view class='dianJ'>
-    销售
-  </view>
-  <view class='dianJ'>
-    设计师
-  </view>
-</view>
-<view class='xuanZ'>
-  <view class='dianJ'>
-    公务员
-  </view>
-  <view class='dianJ'>
-    教师
-  </view>
-  <view class='dianJ'>
-    管理
-  </view>
-</view>
+
+
+<swiper current="{{currentData}}" class='swiper'  duration="300" bindchange="bindchange">
+  <swiper-item style='height:"286px"'><view class='swiper_con'>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        +
+      </view>
+      <view class='dianJ'>
+        高
+      </view>
+      <view class='dianJ'>
+        瘦
+      </view>
+      <view class='dianJ'>
+        高颜值
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        有腹肌
+      </view>
+      <view class='dianJ'>
+        医护
+      </view>
+      <view class='dianJ'>
+        军警
+      </view>
+      <view class='dianJ'>
+        公关
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        行政
+      </view>
+      <view class='dianJ'>
+        工程师
+      </view>
+      <view class='dianJ'>
+        产品
+      </view>
+      <view class='dianJ'>
+        传媒
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        财会
+      </view>
+      <view class='dianJ'>
+        金融
+      </view>
+      <view class='dianJ'>
+        销售
+      </view>
+      <view class='dianJ'>
+        设计师
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        公务员
+      </view>
+      <view class='dianJ'>
+        教师
+      </view>
+      <view class='dianJ'>
+        管理
+      </view>
+    </view>
+    </view>
+  </swiper-item>
+  
+  
+  
+  
+  <swiper-item style='height:"286px"'><view class='swiper_con'>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        +
+      </view>
+      <view class='dianJ'>
+        开朗
+      </view>
+      <view class='dianJ'>
+        幽默
+      </view>
+      <view class='dianJ'>
+        爱笑
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        逗比
+      </view>
+      <view class='dianJ'>
+        乐观
+      </view>
+      <view class='dianJ'>
+        安静
+      </view>
+      <view class='dianJ'>
+        活泼
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        可爱
+      </view>
+      <view class='dianJ'>
+        独立
+      </view>
+      <view class='dianJ'>
+        慢热
+      </view>
+      <view class='dianJ'>
+        温柔
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        善良
+      </view>
+      <view class='dianJ'>
+        积极
+      </view>
+      <view class='dianJ'>
+        内向
+      </view>
+      <view class='dianJ'>
+        稳重
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        认真
+      </view>
+      <view class='dianJ'>
+        高冷
+      </view>
+      <view class='dianJ'>
+        成熟
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        随和
+      </view>
+      <view class='dianJ'>
+        体贴
+      </view>
+      <view class='dianJ'>
+        外向
+      </view>
+      <view class='dianJ'>
+        强迫症
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        老司机
+      </view>
+      <view class='dianJ'>
+        性格好
+      </view>
+      <view class='dianJ'>
+        拖延症
+      </view>
+      <view class='dianJ'>
+        嘻嘻哈哈
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        洁癖
+      </view>
+      <view class='dianJ'>
+        宅
+      </view>
+    </view>
+  </view></swiper-item>
+
+
+
+  <swiper-item style='height:"286px"'><view class='swiper_con'>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        +
+      </view>
+      <view class='dianJ'>
+        运动
+      </view>
+      <view class='dianJ'>
+        唱歌
+      </view>
+      <view class='dianJ'>
+        健身
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        音乐
+      </view>
+      <view class='dianJ'>
+        吃货
+      </view>
+      <view class='dianJ'>
+        爱玩
+      </view>
+      <view class='dianJ'>
+        文艺
+      </view>
+    </view>
+    <view class='xuanZ'>
+      <view class='dianJ'>
+        做饭
+      </view>
+      <view class='dianJ'>
+        旅游
+      </view>
+    </view>
+  </view></swiper-item>
+</swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <view class='baoC'>保存</view>
