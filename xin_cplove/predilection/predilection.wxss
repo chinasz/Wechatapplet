@@ -15,15 +15,16 @@
   height: 100rpx;
   border-radius: 50rpx;
   font-size: 35rpx;
-  color: #FFF;
+  color: #000;
   text-align: center;
   line-height: 100rpx;
-  background: #614af0;
+  background: #FFF;
   float: left;
   margin-left: 5%;
   margin-right: 5%;
 }
-.xuanX .xuanX_R{
+
+.xuanX .xuanX_L1{
   width: 200rpx;
   height: 100rpx;
   border-radius: 50rpx;
@@ -33,6 +34,16 @@
   line-height: 100rpx;
   background: #FFF;
   float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.xuanX_L:hover{
+  background: #614af0;
+  color: #FFF;
+}
+.xuanX_L1:hover{
+  background: #614af0;
+  color: #FFF;
 }
 .nianL{
   width: 100%;

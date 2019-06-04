@@ -1,0 +1,9 @@
+<!--advanced.wxml-->
+<view class='jiaX'>
+  <text class='tex'>
+    家乡
+  </text>
+  <text class='xuanZ'>
+    请选择 >
+  </text>
+</view>

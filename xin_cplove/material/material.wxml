@@ -4,35 +4,66 @@
   <text class='tex1'>></text>
   <image class='tuP' src='../image/touX.png'></image>
 </view>
-<view class='touX'>
+<view class='touX' bindtap="actioncnt2">
   <text class='tex'>性别</text>
   <text class='tex1'>男 ></text>
 </view>
-<view class='touX'>
+<view class='touX' bindtap="modalinput">
   <text class='tex'>昵称</text>
-  <text class='tex1'>原来。 ></text>
+  <text class='tex1'>></text>
+  <text class='tex1'>原来。</text>
 </view>
-<view class='touX'>
-  <text class='tex'>生日</text>
-  <text class='tex1'>1997-02-07 ></text>
+<modal hidden="{{hiddenmodalput}}" title="请输入昵称" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text'placeholder="请输入昵称" auto-focus/>
+</modal> 
+
+<view class="touX">  
+  <picker mode="date" value="{{date}}"  start="1978-01-01" end="2020-1-1" bindchange="bindDateChange">  
+    <view class="tex">  
+      生日: 
+    </view>
+    <view class='tex1'>
+      {{dates}}
+    </view>   
+  </picker>  
+</view> 
+
+<view class="touX tui-picker-content">
+  <view class="tex tui-picker-name">
+  所在地
+  </view> 
+  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+    <view class="tex1 tui-picker-detail">
+    {{region[0]}}  {{region[1]}}
+    </view> 
+  </picker>
 </view>
-<view class='touX'>
-  <text class='tex'>所在地</text>
-  <text class='tex1'>陕西 西安 ></text>
+
+<view class="touX tui-picker-content">
+  <view class="tex tui-picker-name">
+  家乡所在地
+  </view> 
+  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+    <view class="tex1 tui-picker-detail">
+    {{region[0]}}  {{region[1]}} {{region[2]}}
+    </view> 
+  </picker>
 </view>
-<view class='touX'>
-  <text class='tex'>家乡所在地</text>
-  <text class='tex1'>请选择 ></text>
-</view>
-<view class='touX'>
+
+<view class='touX' bindtap="modalinput1">
   <text class='tex'>学校名称</text>
-  <text class='tex1'>点击输入 ></text>
+  <text class='tex1'>></text>
+  <text class='tex1'>点击输入</text>
 </view>
-<view class='touX'>
+<modal hidden="{{hiddenmodalput1}}" title="请输入学校名称" confirm-text="提交" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1">  
+    <input type='text'placeholder="请输入学校名称" auto-focus/>
+</modal> 
+
+<view class='touX' bindtap="actioncnt1">
   <text class='tex'>学校类型</text>
   <text class='tex1'>学院/大学 ></text>
 </view>
-<view class='touX'>
+<view class='touX' bindtap="actioncnt">
   <text class='tex'>学籍状态</text>
   <text class='tex1'>工作党 ></text>
 </view>

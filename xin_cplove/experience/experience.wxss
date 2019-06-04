@@ -44,8 +44,6 @@ image{
   width: 50%;
   height: 100rpx;
   font-size: 35rpx;
-  font-weight: 600;
-  color: #000;
   text-align: center;
   line-height: 100rpx;
   float: left;
@@ -54,7 +52,6 @@ image{
   width: 50%;
   height: 100rpx;
   font-size: 35rpx;
-  color: #a3a2a7;
   text-align: center;
   line-height: 100rpx;
   float: left;
@@ -93,7 +90,6 @@ image{
   width: 229rpx;
   height: 288rpx;
   text-align: center;
-  border: 3rpx solid transparent;
   float: left;
   border-radius: 20rpx;
 }
@@ -138,7 +134,69 @@ image{
   height: 0;
   color: transparent;
 }
+.tab {
+  border-bottom: 1px solid #f5f5f5;
+  zoom: 1;
+}
+ 
+.tab:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+.tabBorer {
+  color: #000;
+  font-weight: 600;
+}
+
 
 .slide-image{
   width: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 630rpx;
+}
+ 
+.swiper_con {
+  width: 100%;
+  height: 100%;
+  margin-top: 80rpx;
+}
+.fenX{
+  width: 85%;
+  height: 278rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+.fenX .first{
+  width: 100%;
+  font-size: 40rpx;
+  color: #07004e;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.fenX .second{
+  width: 100%;
+  font-size: 40rpx;
+  color: #07004e;
+  text-align: center;
+  margin: 30rpx 0;
+}
+.fenX .thirdly{
+  width: 100%;
+  font-size: 30rpx;
+  color: #b7b6be;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.yueK2:hover{
+  border: 3rpx solid #6047e0;
+}
+#yueK1{
+  margin-left: 5%;
 }

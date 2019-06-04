@@ -1,0 +1,11 @@
+<!--romance.wxml-->
+<view class='xiY'>
+  <image class='tuB' src='../image/wenD.png'></image>
+  <text class='tex'>成长经历</text>
+</view>
+
+<textarea class='wenB' placeholder='越走心推荐质量越优秀哦'></textarea>
+
+<view class='wanC'>
+  完成
+</view>

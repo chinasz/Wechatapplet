@@ -4,14 +4,10 @@ Page({
   data: {
     logs: []
   },
-  go: function () {
-    wx.redirectTo({
-      url: '../advanced/advanced',
-    })
-  },
+
   onLoad: function () {
     this.setData({
-      logs: (wx.getStorageSync('predilection') || []).map(log => {
+      logs: (wx.getStorageSync('future') || []).map(log => {
         return util.formatTime(new Date(log))
       })
     })

@@ -19,27 +19,46 @@
 </image>
 
 <view class='tab'>
-  <view class='tab_L'>体验卡</view>
-  <view class='tab_R'>免费获取</view>
+  <view class='tab_L {{currentData == 0 ? "tabBorer" : ""}}' data-current = "0" bindtap='checkCurrent'>体验卡</view>
+  <view class='tab_R {{currentData == 1 ? "tabBorer" : ""}}' data-current = "1" bindtap='checkCurrent'>免费获取</view>
 </view>
+<swiper current="{{currentData}}" class='swiper'  duration="300" bindchange="bindchange">
+  <swiper-item><view class='swiper_con'>
+    <view class='yueK'>
+        <view class='yueK2' id='yueK1'>
+          <view class='tex1'>1月卡</view>
+          <view class='tex2'>￥15</view>
+          <view class='tex3'>日均0.5元</view>
+        </view>
+        <view class='yueK2'>
+          <view class='tex1'>3月卡</view>
+          <view class='tex2'>￥36</view>
+          <view class='tex3'>日均0.4元</view>
+        </view>
+        <view class='yueK2'>
+          <view class='tex1'>1年卡</view>
+          <view class='tex2'>￥128</view>
+          <view class='tex3'>日均0.35元</view>
+        </view>
+      </view>
 
-<view class='yueK'>
-  <view class='yueK1'>
-    <view class='tex1'>1月卡</view>
-    <view class='tex2'>￥15</view>
-    <view class='tex3'>日均0.5元</view>
-  </view>
-  <view class='yueK2'>
-    <view class='tex1'>3月卡</view>
-    <view class='tex2'>￥36</view>
-    <view class='tex3'>日均0.4元</view>
-  </view>
-  <view class='yueK2'>
-    <view class='tex1'>1年卡</view>
-    <view class='tex2'>￥128</view>
-    <view class='tex3'>日均0.35元</view>
-  </view>
-</view>
+      <view class='kaiT'>立即开通</view>
+      <view class='tiS'>你还未获得恋爱体验卡的附属功能哦</view>
+    </view>
+  </swiper-item>
+  
+  
+  
+  
+  <swiper-item><view class='swiper_con'>
+    <view class='fenX'>
+      <view class='first'>8个新用户点击分享</view>
+      <view class='second'>获取一个月特权</view>
+      <view class='thirdly'>新用户：从未参与过一周CP活动的用户</view>
+    </view>
 
-<view class='kaiT'>立即开通</view>
-<view class='tiS'>你还未获得恋爱体验卡的附属功能哦</view>
+    <view class='kaiT'>立即分享</view>
+    <view class='tiS'>0个已助力，还差8个人即可获得</view>
+
+  </view></swiper-item>
+</swiper>
