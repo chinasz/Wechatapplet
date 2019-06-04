@@ -5,7 +5,6 @@ Page({
     region: ["请", "选", "择"], 
   },
   changeRegin(e){ 
-    console.log(e);
     app.globalData.selectInfo.region = e.detail.value;
     app.globalData.selectInfo.province = e.detail.value[0];
     app.globalData.selectInfo.city = e.detail.value[1];
@@ -15,7 +14,7 @@ Page({
   goIndex:function(e){
     if(!app.globalData.selectInfo.region){
       app.util.message('请选择地区','','error');
-    }else{
+    } else if (e.detail.encryptedData && e.detail.iv){
       var data = app.globalData.selectInfo;
       data.mid = app.globalData.mid; 
       data.encryptedData = e.detail.encryptedData;
@@ -32,7 +31,8 @@ Page({
         data: data,
         method: 'post',
         success:function(res){
-          if(res.errno == 0){
+          console.log(res);
+          if(res.data.errno == 0){
             wx.reLaunch({
               url: '../activity/activity'
             })
