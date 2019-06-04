@@ -4,6 +4,16 @@ const util = require('../../utils/util.js')
 Page({
   data: {
   },
+  go: function () {
+    wx.navigateTo({
+      url: '../heartbeat/heartbeat',
+    })
+  },
+  go1: function () {
+    wx.navigateTo({
+      url: '../predilection/predilection',
+    })
+  },
   onLoad: function (options) {
     
   },

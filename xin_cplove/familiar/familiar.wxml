@@ -1,0 +1,67 @@
+<!--familiar.wxml-->
+<view class='guanY'>关于一周CP App端账号封禁</view>
+<view class='fengH'>
+  <text class='tex'>在App端被封号了应该怎们办？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='guanY'>关于当前版本的玩法</view>
+<view class='fengH'>
+  <text class='tex'>什么是CP候选人？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>观察区和心动区是用来做什么的？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>签到环节去哪了？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='guanY'>关于心动选人环节</view>
+<view class='fengH'>
+  <text class='tex'>为什么可以有多个CP候选人？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>把系统推荐的人选加入心动区？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>把系统推荐的人选加入心动区或观察区？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>心动置顶是什么意思？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='guanY'>关于结果公布环节</view>
+<view class='fengH'>
+  <text class='tex'>亮灯是什么意思？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>灭灯是什么意思？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>如何获得CP的联系方式？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>如何解散CP关系？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='guanY'>关于会员功能服务</view>
+<view class='fengH'>
+  <text class='tex'>恋爱体验卡会员拥有哪些特权？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>恋爱体验卡的有效使用时间是？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='fengH'>
+  <text class='tex'>提前解锁微信服务应该怎样使用？</text>
+  <text class='tex1'>></text>
+</view>
+<view class='lianX'>联系客服</view>

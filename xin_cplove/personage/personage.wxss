@@ -1,0 +1,92 @@
+/* xin_cplove/personage/personage.wxss */
+.dingB{
+  width: 100%;
+  height: 365rpx;
+}
+.xinX{
+  width: 100%;
+  height: 150rpx;
+  position: absolute;
+  left: 0%;
+  top: 10%;
+}
+.xinX .touX{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.xinX .tex{
+  height: 150rpx;
+  float: left;
+}
+.xinX .tex .niC{
+  font-size: 45rpx;
+  color: #FFF;
+  font-weight: 600;
+}
+.xinX .tex .diZ{
+  width: 130rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: rgba(77, 63, 125, .5);
+  font-size: 30rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 60rpx;
+  float: left;
+  margin-top: 8%;
+}
+.biaoT{
+  font-size: 40rpx;
+  color: #000;
+  font-weight: 600;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.neiR{
+  width: 100%;
+  height: 70rpx;
+  margin-top: 5%;
+  line-height: 70rpx;
+}
+.neiR .jiaX{
+  font-size: 36rpx;
+  color: #000;
+  float: left;
+  margin-left: 5%;
+  font-weight: 600;
+}
+.neiR .baoM{
+  font-size: 36rpx;
+  color: #000;
+  float: left;
+  margin-left: 10%;
+}
+.yinS{
+  font-size: 40rpx;
+  color: #0c0146;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: 600;
+}
+.tiS{
+  width: 100%;
+  text-align: center;
+  font-size: 35rpx;
+  color: #bab9be;
+  margin: 5% 0%;
+}
+.dianJ{
+  width: 50%;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background: #614af2;
+  font-size: 35rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0 auto;
+}

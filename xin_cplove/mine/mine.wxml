@@ -11,7 +11,7 @@
     <view class='niC'>原来啊。</view>
     <view class='cpH'>CP号：4519504</view>
   </view>
-  <view class='grzy'>个人主页</view>
+  <view class='grzy' bindtap='go7'>个人主页</view>
 </view>
 
 <view style='margin-top:76%;'>

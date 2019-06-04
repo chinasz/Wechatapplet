@@ -1,0 +1,35 @@
+/*familiar.wxss*/
+.guanY{
+  font-size: 35rpx;
+  color: #999999;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.fengH{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.fengH .tex{
+  font-size: 35rpx;
+  color: #000;
+  float: left;
+  margin-left: 5%;
+}
+.fengH .tex1{
+  font-size: 35rpx;
+  color: #a1a1a1;
+  float: right;
+  margin-right: 5%;
+}
+.lianX{
+  width: 80%;
+  height: 100rpx;
+  margin: 10% auto;
+  font-size: 40rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  background: #614af0;
+}
