@@ -1,9 +1,29 @@
 <!--advanced.wxml-->
-<view class='jiaX'>
+<view class="jiaX tui-picker-content">
+  <view class="tex tui-picker-name">
+  所在地
+  </view> 
+  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+    <view class="tex1 tui-picker-detail">
+    {{region[0]}}  {{region[1]}}
+    </view> 
+  </picker>
+</view>
+
+<view class='jiaX' bindtap="actioncnt1">
   <text class='tex'>
-    家乡
+    学校等级
   </text>
-  <text class='xuanZ'>
-    请选择 >
+  <text class='tex1'>
+    学院/大学 >
+  </text>
+</view>
+
+<view class='jiaX' bindtap="actioncnt">
+  <text class='tex'>
+    学籍状态
+  </text>
+  <text class='tex1'>
+    都可以 >
   </text>
 </view>

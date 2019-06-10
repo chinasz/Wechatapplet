@@ -6,38 +6,44 @@ Page({
     logs: []
   },
   go:function(){
-    wx.redirectTo({
+
+    wx.navigateTo({
       url: '../material/material',
     })
   },
   go1: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../tone/tone',
     })
   },
   go2: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../label/label',
     })
   },
   go3: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../mindful/mindful',
     })
   },
   go4: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../predilection/predilection',
     })
   },
   go5: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../feedback/feedback',
     })
   },
   go6: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../experience/experience',
+    })
+  },
+  go7: function () {
+    wx.navigateTo({
+      url: '../personage/personage',
     })
   },
   onLoad: function () {

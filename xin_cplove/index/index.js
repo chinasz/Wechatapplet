@@ -36,5 +36,6 @@ Page({
     }
   },
   onLoad: function () {
+
   }
 })

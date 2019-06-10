@@ -3,7 +3,7 @@
   <image class='sxT' src='../image/shaixuan.png'></image>
 </view>
 <view class='wenZ'>心动区</view>
-<view class='heartbeat'>
+<view class='heartbeat' bindtap='go'>
   <image class='touxiang' src='../image/touX.png'></image>
 </view>
 

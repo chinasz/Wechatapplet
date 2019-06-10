@@ -1,0 +1,6 @@
+<!--report.html-->
+<view class='baoG'>报告故障</view>
+<textarea class='shuR' placeholder='请输入详细的建议或者反馈，以便我们更好的改进哦'></textarea>
+<view class='tuP'>添加问题图片（选填）</view>
+<view class='kuang'>+</view>
+<view class='tiJ'>提交</view>

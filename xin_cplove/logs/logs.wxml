@@ -9,4 +9,3 @@
   <view class='woman'>女</view>
 </view>
 <button  class='xiaB' bindtap='selectDate' hover-class="navigator-hover">下一步</button>
-

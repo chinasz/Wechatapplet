@@ -1,0 +1,34 @@
+<!--xin_cplove/personage/personage.wxml-->
+<image class='dingB' src='../image/back.png'>
+  <view class='xinX'>
+    <image class='touX' src='../image/touX.png'></image>
+    <view class='tex'>
+      <view class='niC'>原来。</view>
+      <view class='diZ'>陕西 西安</view>
+      <view class='diZ'>22岁</view>
+      <view class='diZ'>水瓶座</view>
+    </view>
+  </view>
+</image>
+<view class='biaoT'>基础资料</view>
+<view class='neiR'>
+<text class='jiaX' decode="{{true}}">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乡：</text>
+<text class='baoM'>保 密 中 ···</text>
+</view>
+<view class='neiR'>
+<text class='jiaX' decode="{{true}}">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校：</text>
+<text class='baoM'>保 密 中 ···</text>
+</view>
+<view class='neiR'>
+<text class='jiaX' decode="{{true}}">学校类型：</text>
+<text class='baoM'>学院/大学</text>
+</view>
+<view class='neiR'>
+<text class='jiaX' decode="{{true}}">职业属性：</text>
+<text class='baoM'>工作党</text>
+</view>
+
+<view class='yinS'>音色测评</view>
+<view class='tiS'>对方还没做过音色测评哦，想听他的声音？</view>
+
+<view class='dianJ'>通知ta去录制</view>

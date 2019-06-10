@@ -18,7 +18,12 @@
     "xin_cplove/appearance/appearance",
     "xin_cplove/grow/grow",
     "xin_cplove/future/future",
-    "xin_cplove/advanced/advanced"
+    "xin_cplove/advanced/advanced",
+    "xin_cplove/report/report",
+    "xin_cplove/opinion/opinion",
+    "xin_cplove/familiar/familiar",
+    "xin_cplove/heartbeat/heartbeat",
+    "xin_cplove/personage/personage"
   ],
   "window": {
     "backgroundTextStyle": "light",

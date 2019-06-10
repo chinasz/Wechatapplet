@@ -1,4 +1,4 @@
-//logs.js
+//activity.js
 const app = getApp();
 Page({
   data: {
@@ -7,6 +7,11 @@ Page({
   screen:function(e){
     wx.navigateTo({
       url: '../predilection/predilection',
+    })
+  },
+  go: function () {
+    wx.navigateTo({
+      url: '../heartbeat/heartbeat',
     })
   },
   attract:function(e){

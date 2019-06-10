@@ -11,7 +11,7 @@
     <view class='niC'>原来啊。</view>
     <view class='cpH'>CP号：4519504</view>
   </view>
-  <view class='grzy'>个人主页</view>
+  <view class='grzy' bindtap='go7'>个人主页</view>
 </view>
 
 <view style='margin-top:76%;'>
@@ -44,6 +44,17 @@
   <view class='xiangQ' bindtap='go3'>
     <image class='geR' src='../image/QQQ.png'></image>
     <view class='text'>走心问答</view>
+    <image class='zhanK' src='../image/zhanK.png'></image>
+  </view>
+
+  <view class='xiangQ' bindtap='go4'>
+    <image class='geR' src='../image/shaiX.png'></image>
+    <view class='text'>偏好设置</view>
+    <image class='zhanK' src='../image/zhanK.png'></image>
+  </view>
+  <view class='xiangQ'>
+    <image class='geR' src='../image/jiL.png'></image>
+    <view class='text'>匹配记录</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
 
