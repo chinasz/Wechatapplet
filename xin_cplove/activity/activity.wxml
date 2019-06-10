@@ -1,5 +1,5 @@
 <!--activity.wxml-->
-<view class='shaiX'>
+<view class='shaiX' bindtap='screen'>
   <image class='sxT' src='../image/shaixuan.png'></image>
 </view>
 <view class='wenZ'>心动区</view>
@@ -16,7 +16,13 @@
   <view class="recode"></view>
   <view class="recode"></view>
   <view class="recode">
+    <block wx:if="{{prefect[0]}}">
+    <image src="{{prefect[0].member_avatar}}"></image>
+    <text style="font-size:80rpx;color:#fff;" bindtap='attract'>√</text>
+    </block>
+    <block wx:else>
     <text>立即刷新</text>
+    </block>
   </view>
 </view>
 <image class='candidate' src='../image/houX.png'></image>

@@ -10,5 +10,6 @@ App({
     hasuser:false,
     mid:null,
     selectInfo:{},
+    pair:null,
   }
 })

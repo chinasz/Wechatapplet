@@ -1,8 +1,7 @@
-const util = require('../../utils/util.js')
-
+//predilection.js
+const app = getApp();
 Page({
   data: {
-    logs: []
   },
   go: function () {
     wx.redirectTo({
@@ -10,10 +9,6 @@ Page({
     })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('predilection') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    
   }
 })
