@@ -16,12 +16,18 @@
   <view class="recode"></view>
   <view class="recode"></view>
   <view class="recode">
-    <block wx:if="{{prefect[0]}}">
-    <image src="{{prefect[0].member_avatar}}"></image>
-    <text style="font-size:80rpx;color:#fff;" bindtap='attract'>√</text>
+    <block wx:if="{{prefect}}">
+      <block wx:if="{{prefect.time}}">
+        <text>倒计时</text>
+        <text>倒计时</text>
+      </block>
+      <block wx:else>
+      <image src="{{prefect.member_avatar}}"></image>
+      <text style="font-size:80rpx;color:#fff;" bindtap='attract'>√</text>
+      </block>
     </block>
     <block wx:else>
-    <text>立即刷新</text>
+    <text>暂无匹配结果</text>
     </block>
   </view>
 </view>

@@ -1,15 +1,20 @@
-//logs.js
-const util = require('../../utils/util.js')
-
+//heartbeat.js
+const app = getApp();
 Page({
   data: {
-    logs: []
+    
+  },
+  getheart:function(){
+    app.util.request({
+      url:'',
+      data:{},
+      method:'post',
+      success:function(res){
+        
+      }
+    })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('heartbeat') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    
   }
 })

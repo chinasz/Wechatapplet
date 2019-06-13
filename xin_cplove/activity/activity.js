@@ -15,22 +15,38 @@ Page({
     })
   },
   attract:function(e){
-    var appealed = this.data.prefect[0].member_id;
-    
-
-  },
-  onLoad: function (options) {
     var that = this;
     app.util.request({
-      url:"entry/wxapp/pair",
-      data:{},
-      method:"post",
+      url:'entry/wxapp/pair_choice',
+      data: { id: that.data.prefect.member_id},
+      method:'post',
       success:function(res){
-        that.setData({
-          prefect:res.data.data,
-        })
+        if(res.data.errno == 0){
+          that.pair();
+        }
+
       }
     })
+  },
+  pair:function(){
+    var that = this;
+    app.util.request({
+      url: "entry/wxapp/pair",
+      data: {},
+      method: "post",
+      success: function (res) {
+        if(res.data.errno == 0){
+          that.setData({
+            prefect: res.data.data,
+          })
+        }else{
+
+        }
+      }
+    })
+  },
+  onLoad: function (options) {
+    this.pair();
   },
   onReady: function () {
 
