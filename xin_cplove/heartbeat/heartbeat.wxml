@@ -1,29 +1,10 @@
 <!--heartbeat.wxml-->
+<block wx:for="{{heartgirl}}" wx:for-index="i" wx:for-item="heart">
 <view class='first'>
-  <image class='xinD' src='../image/xinD.png'></image>
+  <image class='xinD' src='{{heart.member_avatar}}'></image>
   <view class='tex'>
-    <view class='niC'>楠楠</view>
-    <view class='shiJ'>3天前 加入了心动区</view>
+    <view class='niC'>{{heart.member_nickname}}</view>
+    <view class='shiJ'>{{heart.update_time}}前 加入了心动区</view>
   </view>
 </view>
-<view class='first'>
-  <image class='xinD' src='../image/xinD1.png'></image>
-  <view class='tex'>
-    <view class='niC'>冉冉^_^</view>
-    <view class='shiJ'>3天前 加入了心动区</view>
-  </view>
-</view>
-<view class='first'>
-  <image class='xinD' src='../image/xinD2.png'></image>
-  <view class='tex'>
-    <view class='niC'>sunshine</view>
-    <view class='shiJ'>3天前 加入了心动区</view>
-  </view>
-</view>
-<view class='first'>
-  <image class='xinD' src='../image/touX.png'></image>
-  <view class='tex'>
-    <view class='niC'>原来啊。</view>
-    <view class='shiJ'>3天前 加入了心动区</view>
-  </view>
-</view>
+</block>

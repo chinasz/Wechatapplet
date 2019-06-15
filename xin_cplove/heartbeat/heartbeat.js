@@ -2,19 +2,22 @@
 const app = getApp();
 Page({
   data: {
-    
+    heartgirl:null,
   },
   getheart:function(){
+    var that = this;
     app.util.request({
-      url:'',
+      url:'entry/wxapp/heart',
       data:{},
       method:'post',
       success:function(res){
-        
+        that.setData({
+          heartgirl:res.data.data
+        })
       }
     })
   },
   onLoad: function () {
-    
+    this.getheart();
   }
 })
