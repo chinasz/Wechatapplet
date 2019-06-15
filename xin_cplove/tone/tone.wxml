@@ -17,9 +17,23 @@
 </view>
 
 <view class='zhongJ'>
-  <view class='maiB'>
+  <!-- <view class='maiB'>
     <image class='mai' src='../image/mai.png'></image>
+  </view> -->
+
+  <view class="myRecode">
+    <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+      <image class='mai' src='../image/mai.png'></image>
+      <view class="ripple"></view>
+      <view class="ripple" animation="{{animationData1}}"></view>
+      <view class="ripple" animation="{{animationData2}}"></view>
+    </view>
   </view>
+
+
+
+
+
   <view class='luY'>
     请按住录音按钮，贴近手机下方进行录制
   </view>

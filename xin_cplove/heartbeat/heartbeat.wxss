@@ -1,4 +1,7 @@
 /*heartbeat.wxss*/
+page{
+  overflow-x: hidden;
+}
 .first{
   width: 100%;
   height: 150rpx;
@@ -17,12 +20,12 @@
   float: left;
 }
 .first .niC{
-  font-size: 40rpx;
+  font-size: 35rpx;
   color: #000;
   margin-top: 5%;
 }
 .first .shiJ{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #999999;
   margin-top: 10%;
 }

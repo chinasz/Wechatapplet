@@ -1,4 +1,7 @@
 /* xin_cplove/personage/personage.wxss */
+page{
+  overflow-x: hidden;
+}
 .dingB{
   width: 100%;
   height: 365rpx;
@@ -53,14 +56,14 @@
   line-height: 70rpx;
 }
 .neiR .jiaX{
-  font-size: 36rpx;
+  font-size: 33rpx;
   color: #000;
   float: left;
   margin-left: 5%;
   font-weight: 600;
 }
 .neiR .baoM{
-  font-size: 36rpx;
+  font-size: 33rpx;
   color: #000;
   float: left;
   margin-left: 10%;

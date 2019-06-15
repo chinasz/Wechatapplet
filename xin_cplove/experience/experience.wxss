@@ -1,4 +1,7 @@
 /*experience.wxss*/
+page{
+  overflow-x: hidden;
+}
 image{
   display: block;
 }
@@ -71,6 +74,8 @@ image{
   /* border: 3rpx solid transparent; */
   float: left;
   border-radius: 20rpx;
+  background: #f5f5f5;
+  margin-left: 2%;
 }
 .yueK .yueK2 .tex1{
   font-size: 35rpx;
@@ -178,5 +183,5 @@ image{
   border: 3rpx solid #6047e0;
 }
 #yueK1{
-  margin-left: 5%;
+  margin-left: 3%;
 }

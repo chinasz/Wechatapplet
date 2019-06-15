@@ -5,17 +5,17 @@ Page({
     logs: []
   },
   go: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../report/report',
     })
   },
   go1: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../opinion/opinion',
     })
   },
   go2: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../familiar/familiar',
     })
   },

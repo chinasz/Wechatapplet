@@ -1,3 +1,6 @@
+page{
+  overflow-x: hidden;
+}
 image{
   display: block;
 }

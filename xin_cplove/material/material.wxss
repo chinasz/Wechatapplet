@@ -1,11 +1,15 @@
 /*material.wxss*/
+page{
+  overflow-x: hidden;
+}
 .touX{
   width: 100%;
   overflow: hidden;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .touX .tex{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   float: left;
   line-height: 80rpx;
@@ -19,7 +23,7 @@
   margin-right: 3%;
 }
 .touX .tex1{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   float: right;
   line-height: 80rpx;

@@ -1,7 +1,10 @@
 /*predilection.wxss*/
+page{
+  overflow-x: hidden;
+}
 .suoZ{
   width: 100%;
-  font-size: 40rpx;
+  font-size: 35rpx;
   font-weight: 600;
   margin-left: 5%;
 }
@@ -12,12 +15,12 @@
 }
 .xuanX .xuanX_L{
   width: 200rpx;
-  height: 100rpx;
+  height: 80rpx;
   border-radius: 50rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   text-align: center;
-  line-height: 100rpx;
+  line-height: 80rpx;
   background: #FFF;
   float: left;
   margin-left: 5%;
@@ -26,12 +29,12 @@
 }
 .xuanX .xuanX_L1{
   width: 200rpx;
-  height: 100rpx;
+  height: 80rpx;
   border-radius: 50rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   text-align: center;
-  line-height: 100rpx;
+  line-height: 80rpx;
   background: #FFF;
   float: left;
   margin-left: 5%;
@@ -52,14 +55,14 @@
   margin-top: 5%;
 }
 .nianL .age{
-  font-size: 40rpx;
+  font-size: 35rpx;
   font-weight: 600;
   color: #000;
   margin-left: 5%;
   float: left;
 }
 .nianL .quJ{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   margin-right: 5%;
   float: right;

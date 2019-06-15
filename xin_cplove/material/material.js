@@ -5,24 +5,26 @@ Page({
   data: {
     logs: []
   },
-  data: {
-    hiddenmodalput: true,
-    hiddenmodalput1: true
-  },  
+  
   data: {
     dates: '1997-02-07',
     index: 0,
   },
-  bindTimeChange: function (e) {
-    this.setData({
-      times: e.detail.value
-    })
-  },
+  
+  
   data: {
+    hiddenmodalput: true,
+    hiddenmodalput1: true,
     countryList: ['中国', '美国', '英国', '日本', '韩国', '巴西', '德国'], countryIndex: 6,
     region: ["请选择 >"],
     multiArray: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]], multiIndex: [3, 5],
     multiArray3: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]], multiIndex3: [3, 5, 4]
+  },
+   
+  bindTimeChange: function (e) {
+    this.setData({
+      times: e.detail.value
+    })
   },
 
   changeCountry(e) { this.setData({ countryIndex: e.detail.value }); },
@@ -78,16 +80,23 @@ Page({
       dates: e.detail.value
     })
   },
+  onLoad: function () {
+    this.setData({
+      logs: (wx.getStorageSync('material') || []).map(log => {
+        return util.formatTime(new Date(log))
+      })
+    })
+  },
   modalinput: function () {
     this.setData({
       hiddenmodalput: !this.data.hiddenmodalput
     })
-  },  
+  },
   cancel: function () {
     this.setData({
       hiddenmodalput: true
     });
-  },  
+  },
   confirm: function () {
     this.setData({
       hiddenmodalput: true
@@ -106,13 +115,6 @@ Page({
   confirm1: function () {
     this.setData({
       hiddenmodalput1: true
-    })
-  },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('material') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
     })
   }
 })
