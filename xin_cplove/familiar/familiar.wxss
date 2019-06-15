@@ -1,6 +1,9 @@
 /*familiar.wxss*/
+page{
+  overflow-x: hidden;
+}
 .guanY{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #999999;
   margin-left: 5%;
   margin-top: 5%;
@@ -11,13 +14,13 @@
   line-height: 100rpx;
 }
 .fengH .tex{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #000;
   float: left;
   margin-left: 5%;
 }
 .fengH .tex1{
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #a1a1a1;
   float: right;
   margin-right: 5%;

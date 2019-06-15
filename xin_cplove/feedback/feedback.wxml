@@ -1,5 +1,5 @@
 <!--feedback.wxml-->
-<view class='malfunction' bindtap='go'>
+<view class='malfunction' bindtap='go' style='margin-top:0;'>
   <image class='guzhang' src='../image/guzhang.png'></image>
   <view class='tex'>报告故障</view>
 </view>

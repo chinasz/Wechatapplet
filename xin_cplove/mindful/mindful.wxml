@@ -58,7 +58,7 @@
     <image class='tuB' src='../image/wenD.png'></image>
     <text class='tex'>去过的地方</text>
   </view>
-  <view class='tiM_B'>
+  <view class='tiM_B' style='margin-bottom:5%;'>
     <text class='tianJ'>添加回答</text>
     <text class='zhanK'>></text>
   </view>

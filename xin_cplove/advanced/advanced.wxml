@@ -1,4 +1,12 @@
 <!--advanced.wxml-->
+<!-- <view class='jiaX'>
+  <text class='tex'>
+    家乡
+  </text>
+  <text class='xuanZ'>
+    请选择 >
+  </text>
+</view> -->
 <view class="jiaX tui-picker-content">
   <view class="tex tui-picker-name">
   所在地

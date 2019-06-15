@@ -1,4 +1,7 @@
 /*answer.wxss*/
+page{
+  overflow-x: hidden;
+}
 .xiY{
   width: 100%;
   height: 100rpx;

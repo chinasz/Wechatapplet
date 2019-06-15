@@ -15,12 +15,42 @@
 </view>
 
 <view style='margin-top:76%;'>
-  <view class='suoD'>
-    <view class='suoD_R'>
+  <view class='jieS'>
+    <view class='jieS_W'>
+    <view class='ycBox'>
+  <image class='tu1' src='../image/yinC.png'></image>
+
+  <view class='yueK'>
+    <view class='yueK2' id='yueK1'>
+      <view class='tex1'>1月卡</view>
+      <view class='tex2'>￥15</view>
+      <view class='tex3'>日均0.5元</view>
+    </view>
+    <view class='yueK2'>
+      <view class='tex1'>3月卡</view>
+      <view class='tex2'>￥36</view>
+      <view class='tex3'>日均0.4元</view>
+    </view>
+    <view class='yueK2'>
+      <view class='tex1'>1年卡</view>
+      <view class='tex2'>￥128</view>
+      <view class='tex3'>日均0.35元</view>
+    </view>
+  </view>
+  <view class='anN'>立即获取</view>
+  <view class='huo'>或</view>
+  <view class='mianF'>
+    获取恋爱体验卡
+  </view>
+</view>
       <image class='card' src='../image/wxCard.png'></image>
       <view class='card_R'>
-        <view class='card_T'>解锁微信获取次数</view>
-        <view class='card_T1'>立即获取</view>
+        <view class='tex'>
+          解锁微信次数
+        </view>
+        <view class='tex1'>
+          立即获取
+        </view>
       </view>
     </view>
   </view>
@@ -47,6 +77,7 @@
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
 
+>>>>>>> master
   <view class='xiangQ' bindtap='go4'>
     <image class='geR' src='../image/shaiX.png'></image>
     <view class='text'>偏好设置</view>
@@ -74,4 +105,7 @@
     <view class='text'>帮助与反馈</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
+
+  <view class='quX'>取消本期报名</view>
 </view>
+

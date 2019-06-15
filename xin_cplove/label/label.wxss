@@ -1,4 +1,7 @@
 /*label.wxss*/
+page{
+  overflow-x: hidden;
+}
 .dingB{
   width: 80%;
   height: 60rpx;
@@ -10,6 +13,7 @@
   line-height: 60rpx;
   background: #f5f5f5;
   border-radius: 30rpx;
+  margin-top: 10%;
 }
 .xuanX{
   width: 100%;
@@ -30,7 +34,7 @@
 }
 .xuanZ .dianJ{
   height: 65rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
   color: #150857;
   text-align: center;
   line-height: 65rpx;
@@ -76,4 +80,7 @@ swiper{
 .dianJ:hover{
   background: #6448f2;
   color: #FFF;
+}
+.xianB{
+  padding-bottom: 5%;
 }

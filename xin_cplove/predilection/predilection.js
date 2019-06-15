@@ -9,6 +9,5 @@ Page({
     })
   },
   onLoad: function () {
-
   }
 })

@@ -6,7 +6,6 @@ Page({
     logs: []
   },
   go:function(){
-
     wx.navigateTo({
       url: '../material/material',
     })

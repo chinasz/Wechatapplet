@@ -3,22 +3,28 @@
   “你觉得那些标签符合你
 </view>
 <view class='xuanX'>
-  <view class='{{currentData == 0 ? "tabBorer" : ""}} neiZ' data-current = "0" bindtap='checkCurrent'>
+  <view class='xianB {{currentData == 0 ? "tabBorer" : ""}} neiZ' data-current = "0" bindtap='checkCurrent'>
   外在
   </view>
-  <view class='{{currentData == 1 ? "tabBorer" : ""}} neiZ' data-current = "1" bindtap='checkCurrent'>
+  <view class='xianB {{currentData == 1 ? "tabBorer" : ""}} neiZ' data-current = "1" bindtap='checkCurrent'>
     内在
   </view>
-  <view class='{{currentData == 2 ? "tabBorer" : ""}} neiZ' data-current = "2" bindtap='checkCurrent'>
+  <view class='xianB {{currentData == 2 ? "tabBorer" : ""}} neiZ' data-current = "2" bindtap='checkCurrent'>
     爱好
   </view>
 </view>
+
+
+
 <swiper current="{{currentData}}" class='swiper'  duration="300" bindchange="bindchange">
   <swiper-item style='height:"286px"'><view class='swiper_con'>
     <view class='xuanZ'>
-      <view class='dianJ'>
+      <view class='dianJ' bindtap="modalinput1">
         +
       </view>
+      <modal hidden="{{hiddenmodalput1}}" title="请输入学校名称" confirm-text="提交" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1">  
+    <input type='text'placeholder="请输入学校名称" auto-focus/>
+</modal> 
       <view class='dianJ'>
         高
       </view>
@@ -90,9 +96,12 @@
   
   <swiper-item style='height:"286px"'><view class='swiper_con'>
     <view class='xuanZ'>
-      <view class='dianJ'>
+      <view class='dianJ' bindtap="modalinput1">
         +
       </view>
+      <modal hidden="{{hiddenmodalput1}}" title="请输入学校名称" confirm-text="提交" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1">  
+    <input type='text'placeholder="请输入学校名称" auto-focus/>
+</modal> 
       <view class='dianJ'>
         开朗
       </view>
@@ -198,9 +207,12 @@
 
   <swiper-item style='height:"286px"'><view class='swiper_con'>
     <view class='xuanZ'>
-      <view class='dianJ'>
+      <view class='dianJ' bindtap="modalinput1">
         +
       </view>
+      <modal hidden="{{hiddenmodalput1}}" title="请输入学校名称" confirm-text="提交" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1">  
+    <input type='text'placeholder="请输入学校名称" auto-focus/>
+</modal> 
       <view class='dianJ'>
         运动
       </view>
@@ -235,4 +247,34 @@
     </view>
   </view></swiper-item>
 </swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master
 <view class='baoC'>保存</view>

@@ -1,13 +1,16 @@
+page{
+  overflow-x: hidden;
+}
 image{
   display: block;
 }
 .shaiX{
-  width: 100rpx;
-  height: 70rpx;
+  width: 70rpx;
+  height: 60rpx;
   background: #240447;
   border: 3rpx solid #6f4f8e;
   border-radius: 40%;
-  position: absolute;
+  position: fixed;
   left: 5%;
   top: 5%;
 }
@@ -19,29 +22,46 @@ image{
 }
 .heartbeat{
   width: 180rpx;
-  height: 100rpx;
+  height: 80rpx;
   border-top-left-radius: 60rpx;
   border-bottom-left-radius: 60rpx;
   position: absolute;
   right: 0%;
-  top: 33%;
+  top: 36%;
   border: 5rpx solid #ed70e8;
   border-right: none;
   background: rgba(0, 0, 0, .3);
 }
+.heartbeat .jiantou{
+  width: 45rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
 .heartbeat .touxiang{
-  width: 70rpx;
-  height: 70rpx;
+  width: 50rpx;
+  height: 50rpx;
   border-radius: 50%;
-  margin-top: 7%;
-  margin-left: 20%;
+  position: absolute;
+  top: 20%;
+  left: 44%;
+  z-index: 1;
+}
+.heartbeat .touxiang1{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 65%;
 }
 .wenZ{
   font-size: 30rpx;
   color: #ee54f2;
   position: absolute;
   right: 3%;
-  top: 29%;
+  top: 32%;
   font-weight: 600;
 }
 
@@ -76,15 +96,21 @@ image{
 
 .dingB{
   width: 100%;
-  height: 150rpx;
+  height: 166rpx;
+}
+.beiJing{
+  width: 100%;
+  height: 170rpx;
+  background: #280559;
 }
 .logo{
-  width: 100%;
-  height: 200rpx;
+  width: 93%;
+  height: 170rpx;
+  margin: 0 auto;
 }
 .back{
   width: 100%;
-  height: 1030rpx;
+  height: 1400rpx;
   z-index: -2313;
 }
 .immediately{
@@ -98,11 +124,11 @@ image{
   position: absolute;
   top: 40%;
   left: 30%;
-  background: linear-gradient(306deg, #ec49f0, #2c90ff);
+  background: linear-gradient(306deg, #ec49f0,#8526fc, #2c90ff);
 }
 .candidate{
   width: 100%;
-  height: 50rpx;
+  height: 43rpx;
   position: absolute;
   bottom: 50rpx;
   left: 0;
@@ -166,7 +192,7 @@ image{
   box-sizing: border-box;
   position: absolute;
   margin:auto;
-   top:0;
+   top:28%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -184,8 +210,12 @@ image{
   background: linear-gradient(306deg, #ec49f0, #2c90ff);
   border-radius: 50%;
   color:#fff;
-  line-height: 300rpx;
   margin: auto;
+  font-size: 40rpx;
+}
+.myRecode .recode .maF{
+  margin-top: 30%;
+  display: block;
 }
 .myRecode .recode image{
   width: 100%;
@@ -195,6 +225,7 @@ image{
 .myRecode .recode:nth-child(-n+3){
   background:#644885; 
 }
+
 .myRecode .recode:nth-child(1){
   width:360rpx;
   height:360rpx;
@@ -212,6 +243,9 @@ image{
   height:320rpx;
   opacity: 0.2;
   animation:spreadone2 1s infinite;
+}
+#recode:hover .ycBox{
+  display: block;
 }
 
 
@@ -250,4 +284,112 @@ image{
     width: 410rpx;
     opacity: 0;
   }
+}
+.lianJ{
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  text-align: center;
+}
+.lianJ text{
+  font-size: 30rpx;
+}
+.lianJ .zuo{
+  color: #FFF;
+}
+.lianJ .you{
+  color: #4f74f6;
+}
+
+#recode .ycBox{
+  width: 90%;
+  height: 800rpx;
+  position: fixed;
+  left: 5%;
+  top: 16%;
+  background: #FFF;
+  display: none;
+  z-index: 555555555555555555;
+  border-radius: 10rpx;
+}
+#recode .ycBox .tu1{
+  width: 100%;
+  height: 300rpx;
+}
+
+
+#recode .ycBox .yueK{
+  width: 100%;
+  height: 288rpx;
+  margin-top: 5%;
+}
+#recode .ycBox .yueK .yueK2{
+  width: 200rpx;
+  height: 244rpx;
+  text-align: center;
+  float: left;
+  border-radius: 20rpx;
+  background: #f5f5f5;
+  margin-left: 3%;
+}
+#recode .ycBox .yueK .yueK2 .tex1{
+  font-size: 35rpx;
+  color: #211c3a;
+  text-align: center;
+  margin-top: 21%;
+}
+#recode .ycBox .yueK .yueK2 .tex2{
+  font-size: 45rpx;
+  color: #211c3a;
+  text-align: center;
+}
+#recode .ycBox .yueK .yueK2 .tex3{
+  font-size: 35rpx;
+  color: #bcbac8;
+  text-align: center;
+}
+#recode .ycBox .anN{
+  width: 80%;
+  height: 100rpx;
+  background: #614af0;
+  border-radius: 50rpx;
+  font-size: 35rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0 auto;
+}
+
+.yueK2:hover{
+  border: 3rpx solid #6047e0;
+}
+
+
+.tui-countdown-content{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 0%;
+  top: 51%;
+}
+.tui-countdown-content .tui-conutdown-box{
+  font-size: 35rpx;
+  color: #FFF;
+}
+
+.bottom_T{
+  width: 100%;
+  height: 150rpx;
+  position: absolute;
+  bottom: -22%;
+  left: 0%;
+}
+.bottom_T .bottom_Tx{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
 }

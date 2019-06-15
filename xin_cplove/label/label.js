@@ -4,6 +4,24 @@ Page({
   data: {
     logs: []
   },
+  data: {
+    hiddenmodalput1: true
+  },  
+  modalinput1: function () {
+    this.setData({
+      hiddenmodalput1: !this.data.hiddenmodalput1
+    })
+  },
+  cancel1: function () {
+    this.setData({
+      hiddenmodalput1: true
+    });
+  },
+  confirm1: function () {
+    this.setData({
+      hiddenmodalput1: true
+    })
+  },
   checkCurrent: function (e) {
     const that = this;
 

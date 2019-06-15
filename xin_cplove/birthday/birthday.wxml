@@ -11,3 +11,4 @@
   </picker>  
 </view> 
 <button  class='xiaB' bindtap='selectSite' hover-class="navigator-hover">下一步</button>
+

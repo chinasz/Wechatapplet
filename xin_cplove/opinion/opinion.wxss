@@ -1,4 +1,7 @@
 /*report.wxss*/
+page{
+  overflow-x: hidden;
+}
 .baoG{
   font-size: 40rpx;
   font-weight: 600;
