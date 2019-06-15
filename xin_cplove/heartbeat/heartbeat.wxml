@@ -1,5 +1,5 @@
 <!--heartbeat.wxml-->
-<block wx:for="{{heartgirl}}" wx:for-index="i" wx:for-item="heart">
+<block wx:for="{{heartgirl}}" wx:for-index="i" wx:for-item="heart" wx:key="k">
 <view class='first'>
   <image class='xinD' src='{{heart.member_avatar}}'></image>
   <view class='tex'>

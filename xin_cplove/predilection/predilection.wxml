@@ -11,7 +11,7 @@
 </view>
 <view class='nianL'>
   <text class='age'>年龄</text>
-  <text class='quJ'>17-23 ></text>
+  <age class='quJ' style="margin-top:-40rpx;" min ="16" max ="80" col="2" val="12-15"/>
 </view>
 <view class='nianL'>
   <text class='age' bindtap='go'>高级筛选</text>

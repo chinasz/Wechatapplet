@@ -10,6 +10,7 @@ Page({
       url:'entry/wxapp/heart',
       data:{},
       method:'post',
+      cachetime:30,
       success:function(res){
         that.setData({
           heartgirl:res.data.data

@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "偏好设置",
-  "usingComponents": {}
+  "usingComponents": {
+    "age":"/components/age/age"
+  }
 }

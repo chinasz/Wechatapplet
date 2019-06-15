@@ -1,0 +1,7 @@
+<!--components/age/age.wxml-->
+<!-- 年龄选择器组件 -->
+<picker mode = "multiSelector" bindchange="szsz" range="{{agearr}}">
+  <text>
+  {{val}}
+  </text>
+</picker>
