@@ -31,7 +31,6 @@ Component({
     agearr:null,
   },
   ready:function(){
-    console.log(this.properties);
     var min = this.properties.min>0?this.properties.min:16;
     var max = this.properties.max > 0 ? this.properties.max : 50;
     var col = this.properties.col > 0 ? this.properties.col : 2;
@@ -53,8 +52,9 @@ Component({
    */
   methods: {
     szsz: function (e) {
+      //console.log(e);
       if(this.properties.col == 1){
-
+        var temval = this.properties.agearr[0][e.detail.value[0]];
         this.setData({
           val: this.properties.agearr[0][e.detail.value[0]]
         })
@@ -72,8 +72,10 @@ Component({
           this.setData({
             val: temval.join('-')
           })
+          
         }
       }
+      this.triggerEvent('onAge', temval);
     }
   }
 })

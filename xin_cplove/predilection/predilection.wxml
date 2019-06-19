@@ -1,23 +1,35 @@
 <!--predilection.wxml--> 
 <view class='suoZ'>对方所在城市</view> 
-<view class='xuanX'> 
-  <view class='xuanX_L'>只要同城</view> 
-  <view class='xuanX_L'>都可以</view> 
+<view class='xuanX'>
+  <radio-group bindchange="pairCity">
+    <label class="xuanX_L {{setting.city == 1?'radio-check':''}}">
+      <radio value="1"/>只要同城
+    </label>
+    <label class="xuanX_L {{setting.city == 0?'radio-check':''}}">
+      <radio value="0"/>都可以
+    </label>
+  </radio-group>
 </view> 
 <view class='suoZ'>对方性别</view> 
-<view class='xuanX'> 
-  <view class='xuanX_L1'>小哥哥</view> 
-  <view class='xuanX_L1'>小姐姐</view> 
+<view class='xuanX'>
+  <radio-group bindchange="pairSex">
+    <label class="xuanX_L {{setting.sex == 1?'radio-check':''}}">
+      <radio value="1"/>小哥哥
+    </label>
+    <label class="xuanX_L {{setting.sex == 0?'radio-check':''}}">
+      <radio value="0"/>小姐姐
+    </label>
+  </radio-group>
 </view> 
 <view class='nianL'> 
   <text class='age'>年龄</text> 
-  <age class='quJ' style="margin-top:-40rpx;" min ="16" max ="80" col="2" val="12-15"/> 
+  <age class='quJ' style="margin-top:-40rpx;" min ="16" max ="40" col="2" val="{{setting.age_min}}-{{setting.age_max}}" bindonAge="pairAge"/> 
 </view> 
-<view class='nianL'> 
-  <text class='age' bindtap='go'>高级筛选</text> 
+<view class='nianL' bindtap='go'> 
+  <text class='age'>高级筛选</text> 
   <text class='quJ'>></text> 
 </view> 
 <view class='nianL'> 
   <text class='age'>自动放宽偏好</text> 
-  <text class='quJ'>></text> 
+  <switch class='quJ' color="#614af0" bindchange="downlike" checked="{{setting.downlike == 1? true :false}}"/>
 </view>

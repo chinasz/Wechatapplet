@@ -19,11 +19,39 @@
   <view class="recode"></view>
   <view class="recode"></view>
   <view class="recode"></view>
-  <view class="recode">
+  <view class="recode" id="recode">
     <block wx:if="{{prefect}}">
+    <view class='ycBox'>
+  <image class='tu1' src='../image/yinC.png'></image>
+
+  <view class='yueK'>
+    <view class='yueK2' id='yueK1'>
+      <view class='tex1'>1月卡</view>
+      <view class='tex2'>￥15</view>
+      <view class='tex3'>日均0.5元</view>
+    </view>
+    <view class='yueK2'>
+      <view class='tex1'>3月卡</view>
+      <view class='tex2'>￥36</view>
+      <view class='tex3'>日均0.4元</view>
+    </view>
+    <view class='yueK2'>
+      <view class='tex1'>1年卡</view>
+      <view class='tex2'>￥128</view>
+      <view class='tex3'>日均0.35元</view>
+    </view>
+  </view>
+  <view class='anN'>立即获取</view>
+  </view>
       <block wx:if="{{prefect.time}}">
-        <text>倒计时</text>
-        <text>倒计时</text>
+        <text class='maF'>立即刷新</text>
+        <text class='tui-countdown-content'>
+          {{time}}
+        </text>
+        <view class='lianJ'>
+          <text class='zuo'>次数不够？</text>
+          <text class='you'>免费获得3次</text>
+        </view>
       </block>
       <block wx:else>
       <image src="{{prefect.member_avatar}}"></image>
