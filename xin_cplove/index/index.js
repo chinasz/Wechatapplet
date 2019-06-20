@@ -14,9 +14,7 @@ Page({
           method: 'post',
           data: { uid: res.memberInfo.uid},
           success: function (res) {
-            app.globalData.hasuser = true;
-            app.globalData.mid = res.data.data.mid;
-            if (res.data.data.jump && res.data.data.jump ==1){
+            if (res.data.errno == 0 && res.data.data.jump && res.data.data.jump ==1){
               wx.navigateTo({
                 url: '../logs/logs',
               })

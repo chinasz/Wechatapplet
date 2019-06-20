@@ -16,7 +16,6 @@ Page({
       app.util.message('请选择地区','','error');
     } else if (e.detail.encryptedData && e.detail.iv){
       var data = app.globalData.selectInfo;
-      data.mid = app.globalData.mid; 
       data.encryptedData = e.detail.encryptedData;
       data.iv = e.detail.iv;
       delete data.region;

@@ -7,8 +7,6 @@ App({
   util:util,
   siteInfo:require('siteinfo.js'),
   globalData: {
-    hasuser:false,
-    mid:null,
     selectInfo:{},
     pair:null,
   }
