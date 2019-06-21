@@ -31,30 +31,20 @@ image{
   border: 5rpx solid #ed70e8;
   border-right: none;
   background: rgba(0, 0, 0, .3);
+  display: flex;
+  align-items: center;
 }
 .heartbeat .jiantou{
   width: 45rpx;
   height: 40rpx;
-  position: absolute;
-  left: 10%;
-  top: 25%;
+  margin-left:15rpx;
+  margin-right:30rpx;  
 }
 .heartbeat .touxiang{
   width: 50rpx;
   height: 50rpx;
   border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 44%;
-  z-index: 1;
-}
-.heartbeat .touxiang1{
-  width: 50rpx;
-  height: 50rpx;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 65%;
+  margin-left:-20rpx; 
 }
 .wenZ{
   font-size: 30rpx;
@@ -244,11 +234,6 @@ image{
   opacity: 0.2;
   animation:spreadone2 1s infinite;
 }
-#recode:hover .ycBox{
-  display: block;
-}
-
-
 @keyframes spreadone{
   from{
     height: 360rpx;
@@ -360,12 +345,6 @@ image{
   line-height: 100rpx;
   margin: 0 auto;
 }
-
-.yueK2:hover{
-  border: 3rpx solid #6047e0;
-}
-
-
 .tui-countdown-content{
   width: 100%;
   overflow: hidden;

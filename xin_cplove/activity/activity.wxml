@@ -5,8 +5,9 @@
 <view class='wenZ'>心动区</view>
 <view class='heartbeat' bindtap='go'>
   <image class='jiantou' src='../image/jiantou.png'></image>
-  <image class='touxiang' src='../image/touX.png'></image>
-  <image class='touxiang1' src='../image/touX.png'></image>
+  <block wx:if="{{heart}}" wx:for="{{heart}}" wx:for-item="h" wx:key="">
+  <image class='touxiang' src='{{h.member_avatar}}'></image>
+  </block>
 </view>
 
 <image class='dingB' src='../image/ding.png'></image>
@@ -14,7 +15,6 @@
 <image class='logo' src='../image/5logo.png'></image>
 </view>
 <image class='back' src='../image/ding.png'></image>
-<!-- <view class='immediately'>立即刷新</view> -->
 <view class="myRecode">
   <view class="recode"></view>
   <view class="recode"></view>
@@ -61,49 +61,13 @@
     <block wx:else>
     <text>暂无匹配结果</text>
     </block>
-  <!-- <view class="recode" id='recode'>
-
-  <view class='ycBox'>
-  <image class='tu1' src='../image/yinC.png'></image>
-
-  <view class='yueK'>
-    <view class='yueK2' id='yueK1'>
-      <view class='tex1'>1月卡</view>
-      <view class='tex2'>￥15</view>
-      <view class='tex3'>日均0.5元</view>
-    </view>
-    <view class='yueK2'>
-      <view class='tex1'>3月卡</view>
-      <view class='tex2'>￥36</view>
-      <view class='tex3'>日均0.4元</view>
-    </view>
-    <view class='yueK2'>
-      <view class='tex1'>1年卡</view>
-      <view class='tex2'>￥128</view>
-      <view class='tex3'>日均0.35元</view>
-    </view>
-  </view>
-  <view class='anN'>立即获取</view>
-</view>
-    <text class='maF'>立即刷新</text>
-    <view class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
-      <text class='tui-conutdown-box'>{{item.hou}}</text>:<text class='tui-conutdown-box'>{{item.min}}</text>:<text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>
-    </view>
-  </view>
-  <view class='lianJ'>
-    <text class='zuo'>次数不够？</text>
-    <text class='you'>免费获得3次</text> -->
-
-    
   </view>
 </view>
 <image class='candidate' src='../image/houX.png'></image>
 <view class='text'>(本周五晚8点开始确定CP)</view>
 
-
-<view class='bottom_T'>
-  <image class='bottom_Tx' src='../image/touX.png'></image>
-  <image class='bottom_Tx' src='../image/touX.png'></image>
-  <image class='bottom_Tx' src='../image/touX.png'></image>
-  <image class='bottom_Tx' src=''></image>
+<view wx:if="{{mutual}}" class='bottom_T'>
+  <block wx:for="{{mutual}}" wx:for-item="love" wx:key="">
+  <image class='bottom_Tx' src='{{love.member_avatar}}'></image>
+  </block>
 </view>

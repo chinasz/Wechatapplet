@@ -4,6 +4,8 @@ Page({
   data: {
     prefect:null,
     time:'00:00:00',
+    mutual:null,
+    heart:null,
   },
   screen:function(e){
     wx.navigateTo({
@@ -31,6 +33,7 @@ Page({
     })
   },  
   attract:function(e){
+    //操作
     var that = this;
     app.util.request({
       url:'entry/wxapp/pair_choice',
@@ -45,6 +48,7 @@ Page({
     })
   },
   pair:function(){
+    //匹配
     var that = this;
     app.util.request({
       url: "entry/wxapp/pair",
@@ -53,9 +57,11 @@ Page({
       success: function (res) {
         if(res.data.errno == 0){
           that.setData({
-            prefect: res.data.data,
+            prefect: res.data.data.pair,
+            mutual: res.data.data.mutual,
+            heart:res.data.data.heart
           })
-          if (res.data.data.time) {
+          if (res.data.data.pair.time) {
             let Inter = setInterval(that.timeup, 1000);
           }
         }
