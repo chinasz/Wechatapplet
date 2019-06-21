@@ -1,55 +1,37 @@
 //logs.js
-const util = require('../../utils/util.js')
-
+const app = getApp();
 Page({
   data: {
-    logs: []
+    member:null
   },
-  go:function(){
+  redirect:(e)=>{
     wx.navigateTo({
-      url: '../material/material',
+      url: ''+e.currentTarget.dataset.url,
     })
   },
-  go1: function () {
-    wx.navigateTo({
-      url: '../tone/tone',
-    })
-  },
-  go2: function () {
-    wx.navigateTo({
-      url: '../label/label',
-    })
-  },
-  go3: function () {
-    wx.navigateTo({
-      url: '../mindful/mindful',
-    })
-  },
-  go4: function () {
-    wx.navigateTo({
-      url: '../predilection/predilection',
-    })
-  },
-  go5: function () {
-    wx.navigateTo({
-      url: '../feedback/feedback',
-    })
-  },
-  go6: function () {
-    wx.navigateTo({
-      url: '../experience/experience',
-    })
-  },
-  go7: function () {
-    wx.navigateTo({
-      url: '../personage/personage',
+  memberDetail:function(e){
+    var that = this;
+    app.util.request({
+      url:'entry/wxapp/getuserinfo',
+      method:'post',
+      data:{},
+      success:function(res){  
+        wx.setStorageSync('currentMember', res.data.data); 
+      }
     })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('mine') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+    this.memberDetail();
+  },
+  onShow:function(){
+    var that = this;
+    wx.getStorage({
+      key: 'currentMember',
+      success(res) {
+        that.setData({
+          member:res.data
+        })
+      }
     })
   }
 })

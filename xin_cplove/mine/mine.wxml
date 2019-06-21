@@ -1,17 +1,17 @@
 <!--mine.wxml-->
 <image class='back' src='../image/back.png'>
-  <view class='tiY' bindtap='go6'>
+  <view class='tiY' bindtap='redirect' data-url="../experience/experience">
     <view class='lianA'>恋爱体验卡</view>
     <view class='zhanK'>></view>
   </view>
 </image>
 <view class='rongQ'>
-  <image class='touX' src='../image/touX.png'></image>
+  <image class='touX' src='{{member.member_avatar}}'></image>
   <view class='rongQ_C'>
-    <view class='niC'>原来啊。</view>
+    <view class='niC'>{{member.member_nickname}}</view>
     <view class='cpH'>CP号：4519504</view>
   </view>
-  <view class='grzy' bindtap='go7'>个人主页</view>
+  <view class='grzy' bindtap='redirect' data-url="../personage/personage">个人主页</view>
 </view>
 
 <view style='margin-top:76%;'>
@@ -55,30 +55,27 @@
     </view>
   </view>
   
-
-  <view class='xiangQ' bindtap='go'>
+  <view class='xiangQ' bindtap='redirect' data-url="../material/material">
     <image class='geR' src='../image/geR.png'></image>
     <view class='text'>个人资料</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-  <view class='xiangQ' bindtap='go1'>
+  <view class='xiangQ' bindtap='redirect' data-url="../tone/tone">
     <image class='geR' src='../image/yinS.png'></image>
     <view class='text'>音色测评</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-  <view class='xiangQ' bindtap='go2'>
+  <view class='xiangQ' bindtap='redirect' data-url="../label/label">
     <image class='geR' src='../image/biaoQ.png'></image>
     <view class='text'>个性标签</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-  <view class='xiangQ' bindtap='go3'>
+  <view class='xiangQ' bindtap='redirect' data-url="../mindful/mindful">
     <image class='geR' src='../image/QQQ.png'></image>
     <view class='text'>走心问答</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-
->>>>>>> master
-  <view class='xiangQ' bindtap='go4'>
+  <view class='xiangQ' bindtap='redirect' data-url="../predilection/predilection">
     <image class='geR' src='../image/shaiX.png'></image>
     <view class='text'>偏好设置</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
@@ -88,19 +85,7 @@
     <view class='text'>匹配记录</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
-
-  <view class='xiangQ' bindtap='go4'>
-    <image class='geR' src='../image/shaiX.png'></image>
-    <view class='text'>偏好设置</view>
-    <image class='zhanK' src='../image/zhanK.png'></image>
-  </view>
-  <view class='xiangQ'>
-    <image class='geR' src='../image/jiL.png'></image>
-    <view class='text'>匹配记录</view>
-    <image class='zhanK' src='../image/zhanK.png'></image>
-  </view>
-
-  <view class='xiangQ' bindtap='go5'>
+  <view class='xiangQ' bindtap='redirect' data-url="../feedback/feedback">
     <image class='geR' src='../image/help.png'></image>
     <view class='text'>帮助与反馈</view>
     <image class='zhanK' src='../image/zhanK.png'></image>

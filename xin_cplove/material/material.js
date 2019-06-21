@@ -1,22 +1,12 @@
-//logs.js
+//个人中心.js
+const app = getApp();
 Page({
   data: {
-    logs: []
-  },
-  data: {
+    member:null,
     hiddenmodalput: true,
-    hiddenmodalput1: true
-  },  
-  data: {
+    hiddenmodalput1: true,
     dates: '1997-02-07',
     index: 0,
-  },
-  bindTimeChange: function (e) {
-    this.setData({
-      times: e.detail.value
-    })
-  },
-  data: {
     hiddenmodalput: true,
     hiddenmodalput1: true,
     countryList: ['中国', '美国', '英国', '日本', '韩国', '巴西', '德国'], countryIndex: 6,
@@ -29,17 +19,15 @@ Page({
       times: e.detail.value
     })
   },
+  bindTimeChange: function (e) {
+    this.setData({
+      times: e.detail.value
+    })
+  },
   changeCountry(e) { this.setData({ countryIndex: e.detail.value }); },
   changeRegin(e) { this.setData({ region: e.detail.value }); },
   changeMultiPicker(e) { this.setData({ multiIndex: e.detail.value }) },
   changeMultiPicker3(e) { this.setData({ multiIndex3: e.detail.value }) },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('site') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
-  },
   actioncnt: function () {
     wx.showActionSheet({
       itemList: ['工作党', '学生党', '休整期'],
@@ -51,8 +39,6 @@ Page({
       }
     })
   },
-
-
   actioncnt1: function () {
     wx.showActionSheet({
       itemList: ['大专', '本科', '985/211'],
@@ -80,13 +66,6 @@ Page({
     console.log(e.detail.value)
     this.setData({
       dates: e.detail.value
-    })
-  },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('material') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
     })
   },
   modalinput: function () {
@@ -118,5 +97,16 @@ Page({
     this.setData({
       hiddenmodalput1: true
     })
-  }
+  },
+  onLoad: function () {
+    var that = this;
+    wx.getStorage({
+      key: 'currentMember',
+      success(res) {
+        that.setData({
+          member:res.data
+        })
+      }
+    })
+  },
 })
