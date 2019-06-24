@@ -1,6 +1,6 @@
-//logs.js
-const util = require('../../utils/util.js')
-
+//tone.js
+const app = getApp();
+const record = require('../../utils/record.js');
 Page({
   data: {
     logs: []
@@ -9,13 +9,6 @@ Page({
     animationData1: "",
     animationData2: "",
     animationStatus: false
-  },
-  onLoad: function (options) {
-    this.setData({
-      logs: (wx.getStorageSync('tone') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
   },
   animationFun: function (animationData) {
     if (!this.data.animationStatus) {
@@ -55,9 +48,7 @@ Page({
       animationData2: animation2.export(),
       animationStatus: false
     })
-    wx.stopRecord({
-
-    })
+    record.recorderManager.stop();
   },
   recodeClick: function () {
     this.setData({
@@ -70,11 +61,7 @@ Page({
     setTimeout(() => {
       this.animationRest()
     }, 1000)
-    wx.startRecord({
-
-    })
-    
-    
+    record.recorderManager.start(record.options);
   },
   animationRest: function () {
     //动画重置
@@ -87,7 +74,21 @@ Page({
         this.recodeClick()
       }
     }, 100)
-    
-
   },
+  getau:function(){
+    wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.record']) {
+          wx.openSetting({
+            success(){
+
+            }
+          })
+        }
+      }
+    })
+  },
+  onLoad:function(){
+   
+  }
 })

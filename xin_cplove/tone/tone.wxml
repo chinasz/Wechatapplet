@@ -17,12 +17,8 @@
 </view>
 
 <view class='zhongJ'>
-  <!-- <view class='maiB'>
-    <image class='mai' src='../image/mai.png'></image>
-  </view> -->
-
   <view class="myRecode">
-    <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+    <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd' bindtap="getau">
       <image class='mai' src='../image/mai.png'></image>
       <view class="ripple"></view>
       <view class="ripple" animation="{{animationData1}}"></view>
