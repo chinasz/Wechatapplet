@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "基础资料",
-  "usingComponents": {}
+  "usingComponents": {
+    "modalinput": "/components/modalinput/modalinput"
+  }
 }
