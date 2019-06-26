@@ -1,0 +1,5 @@
+<!--components/modalinput/modalinput.wxml-->
+<text bindtap='modal'>{{val}} ></text>
+<modal hidden="{{hidewenum}}" title="{{title}}" confirm-text="{{confirmtxt}}" cancel-text="{{canceltxt}}" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text' placeholder="请输入{{colname}}" value="{{val}}" focus="true" bindinput="change" maxlength="10"/>
+</modal> 
