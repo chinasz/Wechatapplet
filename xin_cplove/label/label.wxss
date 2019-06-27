@@ -29,13 +29,12 @@ page{
 }
 .xuanZ{
   width: 100%;
-  height: 100rpx;
   margin-top: 3%;
+  overflow: hidden;
 }
 .xuanZ .dianJ{
   height: 65rpx;
   font-size: 30rpx;
-  color: #150857;
   text-align: center;
   line-height: 65rpx;
   padding: 0 20rpx;
@@ -77,10 +76,10 @@ page{
 swiper{
   height: 286px;
 }
-.dianJ:hover{
-  background: #6448f2;
-  color: #FFF;
-}
 .xianB{
   padding-bottom: 5%;
+}
+.select{
+  background: #6448f2;
+  color: #FFF;
 }
