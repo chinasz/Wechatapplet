@@ -2,6 +2,9 @@
 page{
   overflow-x: hidden;
 }
+.pull-left{
+  float: left;
+}
 .baoG{
   font-size: 40rpx;
   font-weight: 600;
@@ -39,6 +42,7 @@ page{
   margin-left: 5%;
 }
 .tiJ{
+  clear: both;
   width: 80%;
   height: 100rpx;
   background: #614af0;
@@ -48,5 +52,14 @@ page{
   line-height: 100rpx;
   margin: 0 auto;
   border-radius: 50rpx;
-  margin-top: 10%;
+  position: fixed;
+  bottom: 30rpx;
+  left: 0;
+  right:0;
+}
+/*字数限制*/
+.font-count{
+  position:absolute;
+  right:20rpx;
+  bottom:0;
 }

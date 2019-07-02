@@ -1,6 +1,11 @@
 <!--report.html-->
 <view class='baoG'>报告故障</view>
-<textarea class='shuR' placeholder='请输入详细的建议或者反馈，以便我们更好的改进哦'></textarea>
+<textarea class='shuR' placeholder='请输入详细的建议或者反馈，以便我们更好的改进哦' bindinput="buginput" maxlength="300" ><text class="font-count">{{len}}</text></textarea>
 <view class='tuP'>添加问题图片（选填）</view>
-<view class='kuang'>+</view>
-<view class='tiJ'>提交</view>
+<block wx:if="{{preview}}" wx:for="{{preview}}" wx:for-item="img" wx:key="">
+  <view class='kuang pull-left'>
+    <image src="{{img}}" style="width:100%;height:100%;"></image>
+  </view>
+</block>
+<view wx:if="{{preview.length < count}}" class='kuang pull-left' bindtap='selectimg'>+</view>
+<view class='tiJ' bindtap='subbug'>提交</view>
