@@ -27,8 +27,7 @@ textarea{
   border: none;
   outline: none;
   font-size: 35rpx;
-  padding-top: 20rpx;
-  padding-left: 40rpx;
+  padding: 20rpx 30rpx 0;
   border-radius: 20rpx;
   margin-top: 5%;
 }
@@ -43,4 +42,10 @@ textarea{
   font-size: 40rpx;
   color: #FFF;
   margin-top: 10%;
+}
+.font-count{
+  position:absolute;
+  bottom:10rpx;
+  right:25rpx;
+  font-size: 30rpx;
 }

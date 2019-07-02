@@ -1,4 +1,4 @@
-//logs.js
+//mine.js
 const app = getApp();
 Page({
   data: {
@@ -17,6 +17,9 @@ Page({
       data:{},
       success:function(res){  
         wx.setStorageSync('currentMember', res.data.data); 
+        that.setData({
+          member: res.data.data
+        })
       }
     })
   },
@@ -25,13 +28,5 @@ Page({
   },
   onShow:function(){
     var that = this;
-    wx.getStorage({
-      key: 'currentMember',
-      success(res) {
-        that.setData({
-          member:res.data
-        })
-      }
-    })
   }
 })

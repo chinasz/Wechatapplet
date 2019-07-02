@@ -1,44 +1,33 @@
-const util = require('../../utils/util.js')
-
+/* 走心问答 */
+const app = getApp();
 Page({
   data: {
-    logs: []
+    question_list:null,
   },
-  go: function () {
-    wx.redirectTo({
-      url: '../answer/answer',
-    })
+  go: function (e) {
+    var query = JSON.stringify(this.data.question_list[e.currentTarget.dataset.id]);
+    if (query){
+      wx.navigateTo({
+        url: '../answer/answer?question=' + query,
+      })
+    }
   },
-  go1: function () {
-    wx.redirectTo({
-      url: '../romance/romance',
-    })
-  },
-  go2: function () {
-    wx.redirectTo({
-      url: '../appearance/appearance',
-    })
-  },
-  go3: function () {
-    wx.redirectTo({
-      url: '../grow/grow',
-    })
-  },
-  go4: function () {
-    wx.redirectTo({
-      url: '../future/future',
-    })
-  },
-  go5: function () {
-    wx.redirectTo({
-      url: '../once/once',
+  getquestion:function(){
+    var that = this;
+    app.util.request({
+      url:'entry/wxapp/getquestion',
+      method:'post',
+      success:function(res){
+        that.setData({
+          question_list:res.data.data
+        })
+      }
     })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('mindful') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    this.getquestion()
+  },
+  onShow: function (){
+    this.getquestion()
   }
 })

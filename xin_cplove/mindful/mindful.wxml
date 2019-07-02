@@ -3,63 +3,15 @@
   <view class='zouX'>走心问答</view>
   <view class='QA'>Q&A</view>
 </view>
-<view class='tiM' bindtap='go'>
+<block wx:if="{{question_list}}" wx:for="{{question_list}}" wx:for-item="question" wx:key=''>
+<view class='tiM' bindtap='go' data-id="{{index}}">
   <view class='tiM_T'>
     <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>什么样的CP会吸引你</text>
+    <text class='tex'>{{question.question}}</text>
   </view>
   <view class='tiM_B'>
-    <text class='tianJ'>添加回答</text>
+    <text class='tianJ'>{{question.answer?question.answer:'添加回答'}}</text>
     <text class='zhanK'>></text>
   </view>
 </view>
-<view class='tiM' bindtap='go1'>
-  <view class='tiM_T'>
-    <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>你觉得最浪漫的事情是</text>
-  </view>
-  <view class='tiM_B'>
-    <text class='tianJ'>添加回答</text>
-    <text class='zhanK'>></text>
-  </view>
-</view>
-<view class='tiM' bindtap='go2'>
-  <view class='tiM_T'>
-    <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>描述自己的外貌</text>
-  </view>
-  <view class='tiM_B'>
-    <text class='tianJ'>添加回答</text>
-    <text class='zhanK'>></text>
-  </view>
-</view>
-<view class='tiM' bindtap='go3'>
-  <view class='tiM_T'>
-    <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>成长经历</text>
-  </view>
-  <view class='tiM_B'>
-    <text class='tianJ'>添加回答</text>
-    <text class='zhanK'>></text>
-  </view>
-</view>
-<view class='tiM' bindtap='go4'>
-  <view class='tiM_T'>
-    <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>对未来的规划</text>
-  </view>
-  <view class='tiM_B'>
-    <text class='tianJ'>添加回答</text>
-    <text class='zhanK'>></text>
-  </view>
-</view>
-<view class='tiM' bindtap='go5'>
-  <view class='tiM_T'>
-    <image class='tuB' src='../image/wenD.png'></image>
-    <text class='tex'>去过的地方</text>
-  </view>
-  <view class='tiM_B' style='margin-bottom:5%;'>
-    <text class='tianJ'>添加回答</text>
-    <text class='zhanK'>></text>
-  </view>
-</view>
+</block>

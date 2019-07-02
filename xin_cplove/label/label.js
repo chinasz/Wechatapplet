@@ -62,29 +62,36 @@ Page({
       method:'post',
       success:function(res){
         getuser.memberDetail();
-        var member = wx.getStorageSync('cp_member');
-        if (member.tag) {
-          res.data.data[1].map((v,i,o)=>{
-            member.tag.map((tv)=>{
-              if(v.tag_id == tv){
-                o[i].select = true;
-              }
-            })
-          })
-        }
-
-        if (member.custom_tag){
-          member.custom_tag.map((v,i,o)=>{
-            o[i].select = true;
-          })
-          res.data.data[1] = res.data.data[1].concat(member.custom_tag);
-        }
         
-        that.setData({
-          tag_type:res.data.data[0],
-          tag_list:res.data.data[1],
-          tag_all: res.data.data[1]
+        wx.getStorage({
+          key:'cp_member',
+          success(re){
+            let member = re.data;
+            if (member.tag) {
+              res.data.data[1].map((v, i, o) => {
+                member.tag.map((tv) => {
+                  if (v.tag_id == tv) {
+                    o[i].select = true;
+                  }
+                })
+              })
+            }
+
+            if (member.custom_tag) {
+              member.custom_tag.map((v, i, o) => {
+                o[i].select = true;
+              })
+              res.data.data[1] = res.data.data[1].concat(member.custom_tag);
+            }
+
+            that.setData({
+              tag_type: res.data.data[0],
+              tag_list: res.data.data[1],
+              tag_all: res.data.data[1]
+            })
+          }
         })
+       
       }
     })
   },

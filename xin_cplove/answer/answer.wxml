@@ -1,11 +1,11 @@
 <!--answer.wxml-->
+<block wx:if="{{question}}">
 <view class='xiY'>
   <image class='tuB' src='../image/wenD.png'></image>
-  <text class='tex'>什么样的CP会吸引你</text>
+  <text class='tex'>{{question.question}}</text>
 </view>
-
-<textarea class='wenB' placeholder='越走心推荐质量越优秀哦'></textarea>
-
-<view class='wanC'>
+<textarea class='wenB' placeholder='越走心推荐质量越优秀哦' maxlength="500" value="{{question.answer}}" bindinput="answerinput" ><text class="font-count">{{len}}</text></textarea>
+<view class='wanC' bindtap='subanswer'>
   完成
 </view>
+</block>
