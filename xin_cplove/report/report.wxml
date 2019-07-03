@@ -1,5 +1,5 @@
 <!--report.html-->
-<view class='baoG'>报告故障</view>
+<view class='baoG'>{{title[op]}}</view>
 <textarea class='shuR' placeholder='请输入详细的建议或者反馈，以便我们更好的改进哦' bindinput="buginput" maxlength="300" ><text class="font-count">{{len}}</text></textarea>
 <view class='tuP'>添加问题图片（选填）</view>
 <block wx:if="{{preview}}" wx:for="{{preview}}" wx:for-item="img" wx:key="">

@@ -2,6 +2,9 @@
 const app = getApp();
 Page({
   data: {
+    ops:['bug','idea'],
+    op:0,
+    title:['报告故障','提交建议'],
     preview:[],
     text:null,
     count:9,
@@ -85,17 +88,19 @@ Page({
     //提交故障
     var that = this;
     var imgupload = [];
+    var op = that.data.ops[that.data.op];
     if(that.data.text && that.data.submit){
       that.setData({
         submit:false
       })
-      if(that.data.preview){
+      if(that.data.preview.length>0){
         //循环图片上传
         that.uploadimgs(that.data.preview,function(){
-          that.bug({text:that.data.text,img:that.data.img.join(','),op:'bug'})
+          that.bug({text:that.data.text,img:that.data.img.join(','),op:op})
         },0)
       }else{
-        that.bug({ text: that.data.text,op:'bug'})
+
+        that.bug({ text: that.data.text,op:op})
       }
     }else{
       wx.showToast({
@@ -105,7 +110,13 @@ Page({
     }
 
   },
-  onLoad: function () {
-
+  onLoad: function (option) {
+    var op = option.id || 0;
+    this.setData({
+      op:op
+    })
+    wx.setNavigationBarTitle({
+      title: ''+this.data.title[op],
+    })
   }
 })
