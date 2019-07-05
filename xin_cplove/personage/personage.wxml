@@ -1,34 +1,111 @@
 <!--xin_cplove/personage/personage.wxml-->
-<image class='dingB' src='../image/back.png'>
-  <view class='xinX'>
-    <image class='touX' src='../image/touX.png'></image>
-    <view class='tex'>
-      <view class='niC'>原来。</view>
-      <view class='diZ'>陕西 西安</view>
-      <view class='diZ'>22岁</view>
-      <view class='diZ'>水瓶座</view>
-    </view>
+<block wx:if="{{uc}}">
+  <view>
+    <image class='dingB' src='../image/back.png'>
+      <view class='xinX'>
+        <image class='touX' src='{{uc.member_avatar}}'></image>
+        <view class='tex'>
+          <view class='niC'>{{uc.member_nickname}}</view>
+          <view class='diZ'>{{uc.member_city}}</view>
+          <view class='diZ'>{{uc.member_birth}}岁</view>
+          <!-- <view class='diZ'>水瓶座</view>-->
+        </view>
+      </view>
+    </image>
+    <view class='raduis-block20'></view>
   </view>
-</image>
-<view class='biaoT'>基础资料</view>
-<view class='neiR'>
-<text class='jiaX' decode="{{true}}">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乡：</text>
-<text class='baoM'>保 密 中 ···</text>
-</view>
-<view class='neiR'>
-<text class='jiaX' decode="{{true}}">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校：</text>
-<text class='baoM'>保 密 中 ···</text>
-</view>
-<view class='neiR'>
-<text class='jiaX' decode="{{true}}">学校类型：</text>
-<text class='baoM'>学院/大学</text>
-</view>
-<view class='neiR'>
-<text class='jiaX' decode="{{true}}">职业属性：</text>
-<text class='baoM'>工作党</text>
-</view>
 
-<view class='yinS'>音色测评</view>
-<view class='tiS'>对方还没做过音色测评哦，想听他的声音？</view>
+  <scroll-view class="" scroll-y="true" style="height:65vh;">
+    <view class="showcase basedata">
+      <view class="casetitle">
+        <view class="title pull-left">基础资料</view>
+        <view class="edit pull-right" bindtap='go' data-url="../material/material">去编辑</view>
+      </view>
+      <view class="casecontent">
+        <view class="textline">
+          <text space="emsp">家  乡:</text>
+          <text class="marginleft40">北京北京</text>
+        </view>
+        <view class="textline">
+          <text space="emsp">学  校:</text>
+          <text class="marginleft40">{{uc.member_school?uc.member_school:'未填写'}}</text>
+        </view>
+        <view class="textline">
+          <text>学籍状态:</text>
+          <text class="marginleft40">{{workselect[uc.member_job-1]?workselect[uc.member_job-1]:'未填写'}}</text>
+        </view>
+      </view>
+    </view>
 
-<view class='dianJ'>通知ta去录制</view>
+
+    <view class="whitespce10" style="background-color:#eee;"></view>
+    <view class="showcase audio">
+      <view class="casetitle">
+        <view class="title pull-left">音色测评</view>
+        <view class="edit pull-right" bindtap='go' data-url="../tone/tone">去上传</view>
+      </view>
+      <view class="casecontent" wx:if="{{uc.audio_path}}">
+        <view class='textline btn'>
+          <view class='btn-radius'>
+            <view id="triangle-right"></view>
+          </view>
+          <view class='pull-left desc'>点击试听</view>
+        </view>
+        <view class='textline btn'>
+          <view class='btn-radius'></view>
+          <view class='pull-left desc'>重新上传</view>
+        </view>
+        <view class='textline btn'>
+          <view class='btn-radius'></view>
+          <view class='pull-left desc'>点击试听</view>
+        </view>
+      </view>
+      <view wx:else class="casecontent">
+        <view class="none">暂时还未录制</view>
+      </view>
+    </view>
+
+    <view class="whitespce10" style="background-color:#eee;"></view>
+    <view class="showcase basedata">
+      <view class="casetitle">
+        <view class="title pull-left">个性标签</view>
+        <view class="edit pull-right" bindtap='go' data-url="../label/label">去添加</view>
+      </view>
+      <block wx:if="{{uc.tag}}">
+      <view class="casecontent" wx:for="{{uc.tag2}}" wx:for-item="type" wx:key="this">
+        <view wx:if="{{type.tag}}" class='textline'>
+          <view class="label-title">{{type.tag_name}}</view>
+          <view wx:for="{{type.tag}}" wx:for-item="tag" wx:key="" class="label pull-left">{{tag.tag_name}}</view>
+        </view>
+      </view>
+      </block>
+      <block wx:else>
+      <view class='casecontent'>
+        <view class="none">暂时还未添加自己的个性标签</view>
+      </view> 
+      </block>
+    </view>
+
+    <view class="whitespce10" style="background-color:#eee;"></view>
+    <view class="showcase basedata">
+      <view class="casetitle">
+        <view class="title pull-left">走心回答</view>
+        <view class="edit pull-right" bindtap='go' data-url="../mindful/mindful">去回答</view>
+      </view>
+      <block wx:if="{{uc.answer}}">
+      <view  wx:for="{{uc.answer}}" wx:for-item="answer" wx:key="" class="casecontent">
+        <view class="question">{{answer.question}}</view>
+        <view class='answer'>{{answer.answer}}</view>
+      </view>
+      </block>
+      <block wx:else>
+      <view class='casecontent'>
+        <view class="none">暂未回答任何走心问答</view>
+      </view>
+      </block>
+    </view>
+    <view class="whitespce10"></view>
+    <view class="whitespce10"></view>
+    <view class="whitespce10"></view>
+  </scroll-view>
+</block>

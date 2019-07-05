@@ -5,9 +5,9 @@ Page({
   data: {
     hiddenmodalput1: true,
     tag_type: null,
-    tag_all:null,
+    tag_all:[],
     current:null,
-    tag_list:null,
+    tag_list:[],
     custom_tag:null,
     custom_input:null,
   },
@@ -31,6 +31,7 @@ Page({
     var current = this.data.current || this.data.tag_list[0].tag_type;
     if(tag !=null && tag.trim()){
       this.data.tag_list.push({tag_name:tag.trim(),tag_type:current,select:true})
+      this.data.tag_all.nv_push({tag_name: tag.trim(), tag_type: current, select: true});
     }
     this.setData({
       hiddenmodalput1: true,
@@ -109,6 +110,7 @@ Page({
     //提交
     let select_tag = [];
     let custom_tag = [];
+
     this.data.tag_all.map((v,i,o)=>{
       if(v.select === true){
         if(v.tag_id){
@@ -118,7 +120,6 @@ Page({
         }
       }
     })
-
     if(select_tag.length>=1){
       app.util.request({
         url:'entry/wxapp/updatetag',

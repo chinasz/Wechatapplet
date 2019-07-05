@@ -1,13 +1,13 @@
 <!--feedback.wxml-->
-<view class='malfunction' bindtap='go' style='margin-top:0;'>
+<view class='malfunction' bindtap='go' style='margin-top:0;' data-url="../report/report?id=0">
   <image class='guzhang' src='../image/guzhang.png'></image>
   <view class='tex'>报告故障</view>
 </view>
-<view class='malfunction' bindtap='go1'>
+<view class='malfunction' bindtap='go' data-url="../report/report?id=1">
   <image class='guzhang' src='../image/wenH.png'></image>
   <view class='tex'>提交建议</view>
 </view>
-<view class='malfunction' bindtap='go2'>
+<view class='malfunction' bindtap='go' data-url="../familiar/familiar">
   <image class='guzhang' src='../image/ganT.png'></image>
   <view class='tex'>联系客服</view>
 </view>

@@ -1,15 +1,22 @@
-//logs.js
-const util = require('../../utils/util.js')
-
+//联系客服.js
+const app = getApp()
 Page({
   data: {
-    logs: []
+    article_list:null,
+  },
+  getarticle:function(){
+    var that = this;
+    app.util.request({
+      url:'entry/wxapp/guide',
+      method:'post',
+      success:function(res){
+        that.setData({
+          article_list:res.data.data
+        })
+      }
+    })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('familiar') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    this.getarticle();
   }
 })

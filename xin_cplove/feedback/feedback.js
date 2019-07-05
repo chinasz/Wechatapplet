@@ -1,30 +1,14 @@
-const util = require('../../utils/util.js')
-
+/* 帮助与反馈 */
+const app = getApp();
 Page({
   data: {
-    logs: []
+    
   },
-  go: function () {
-
+  go: function (e) {
     wx.navigateTo({
-      url: '../report/report',
-    })
-  },
-  go1: function () {
-    wx.navigateTo({
-      url: '../opinion/opinion',
-    })
-  },
-  go2: function () {
-    wx.navigateTo({
-      url: '../familiar/familiar',
+      url: ''+e.currentTarget.dataset.url,
     })
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('feedback') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
   }
 })

@@ -8,6 +8,7 @@ Page({
     update:{},
     hiddenmodalput1: true,
     submit:false,
+    workselect: ['工作党', '学生党'],
   },
   memberDetail: function () {
     var that = this;
@@ -46,7 +47,6 @@ Page({
       itemList: ['女','男'],
       success: function (res) {
         if (res.tapIndex != that.data.member.member_gender){
-
           that.data.member.member_gender = res.tapIndex;
           that.data.update.gender = res.tapIndex
           that.setData({
@@ -98,27 +98,33 @@ Page({
       submit:true
     })
   },
-  schooltype:function(e){
-    //学院类型
-    wx.showActionSheet({
-      itemList: ['大专', '本科', '985/211'],
-      success: function (res) {
-        console.log(res.tapIndex)
-      },
-      fail: function (res) {
-        console.log(res.errMsg)
-      }
-    })
+  school:function(e){
+    //学校名称
+    if (e.detail != '') {
+      this.data.member.member_school = e.detail;
+      this.data.update.school = e.detail;
+      this.setData({
+        member: this.data.member,
+        update: this.data.update,
+        submit: true
+      })
+    }
   },
   work: function (e) {
     //学籍状态
+    var that = this;
     wx.showActionSheet({
-      itemList: ['工作党', '学生党', '休整期'],
+      itemList: that.data.workselect,
       success: function (res) {
-        console.log(res.tapIndex)
-      },
-      fail: function (res) {
-        console.log(res.errMsg)
+        if (res.tapIndex + 1 != that.data.member.member_job){
+          that.data.member.member_job = res.tapIndex + 1;
+          that.data.update.job = res.tapIndex + 1;
+          that.setData({
+            member: that.data.member,
+            update: that.data.update,
+            submit: true
+          })
+        }
       }
     })
   },
@@ -152,15 +158,20 @@ Page({
     var avatar = that.data.update.avatar;
     delete that.data.update.avatar;
     if(avatar){
+      wx.showLoading({
+        title: '请稍后...',
+      })
       wx.uploadFile({
         url: '' + app.util.url('entry/wxapp/user_update') + '&state=we7sid-' + wx.getStorageSync('userInfo').sessionid + '&m=xin_cplove',
         filePath: avatar,
         name: 'file',
         formData:that.data.update,
         success:function(res){
-          if(res.data.errno == 0){
-            that.modifycallback();
+          res.data = JSON.parse(res.data)
+          if(res.data.errno == 0){ 
+              that.modifycallback();
           }
+          wx.hideLoading();
         }
       })
     }else{

@@ -34,11 +34,6 @@ Page({
       submit: true
     })
   },
-  go: function () {
-    wx.navigateTo({
-      url: '../advanced/advanced',
-    })
-  },
   onLoad: function () {
     var that = this;
     that.setData({
