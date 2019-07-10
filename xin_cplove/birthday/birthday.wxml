@@ -1,7 +1,7 @@
 <!--birthday.wxml-->
 <view class='birthday'>请选择你的生日</view>
 <view class="section">  
-  <picker mode="date" value="{{app.globalData.birth}}" start="{{times.start}}" end="{{times.end}}" bindchange="bindDateChange">  
+  <picker mode="date" value="{{times.end}}" start="{{times.start}}" end="{{times.end}}" bindchange="bindDateChange">  
     <view class="picker">  
       您的出生年月: 
       <view class='picker1'>

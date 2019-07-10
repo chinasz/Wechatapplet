@@ -3,7 +3,7 @@ const app =getApp();
 Page({
   data: {
     dates: '请选择>',
-    times: { start: "1970-01-01", end: new app.util.date().dateToStr('yyyy-MM-dd')},
+    times: { start: new app.util.date().dateToStr('yyyy-MM-dd', new app.util.date().dateAdd('y', -40)), end: new app.util.date().dateToStr('yyyy-MM-dd',new app.util.date().dateAdd('y',-17))},
   },
   //  点击日期组件确定事件  
   bindDateChange: function (e) {
@@ -22,6 +22,7 @@ Page({
     }
   },
   onLoad: function () {
-    
+    console.log(new app.util.date().dateToStr('yyyy-MM-dd', new app.util.date().dateAdd('y', -17)));
+    console.log(new app.util.date().dateToStr('yyyy-MM-dd', new app.util.date().dateAdd('y', -40)));
   }
 })
