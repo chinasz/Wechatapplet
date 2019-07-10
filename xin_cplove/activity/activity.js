@@ -61,8 +61,33 @@ Page({
             mutual: res.data.data.mutual,
             heart:res.data.data.heart
           })
-          if (res.data.data.pair.time) {
+          if (res.data.data.pair && res.data.data.pair.time) {
             let Inter = setInterval(that.timeup, 1000);
+          }
+        }
+      }
+    })
+  },
+  flush:function(){
+    //立即刷新
+    var that = this;
+    app.util.request({
+      url:'entry/wxapp/flushpair',
+      data:{},
+      method:'post',
+      success:function(res){
+        if(res.data.errno == 0){
+          if(res.data.data.result){
+            that.pair();
+          } else if (res.data.data.redirect){
+            wx.navigateTo({
+              url: '' + res.data.data.redirect,
+            })
+          }else{
+            wx.showToast({
+              title: ''+res.data.data.msg,
+              icon:'none',
+            })
           }
         }
       }
@@ -72,25 +97,4 @@ Page({
     this.pair();
    
   },
-  onReady: function () {
-
-  },
-  onShow: function () {
-
-  },
-  onHide: function () {
-
-  },
-  onUnload: function () {
-
-  },
-  onPullDownRefresh: function () {
-
-  },
-  onReachBottom: function () {
-
-  },
-  onShareAppMessage: function () {
-
-  }
 })
