@@ -30,7 +30,7 @@ Page({
     var tag = this.data.custom_input;
     var current = this.data.current || this.data.tag_list[0].tag_type;
     if(tag !=null && tag.trim()){
-      this.data.tag_list.push({tag_name:tag.trim(),tag_type:current,select:true})
+      //this.data.tag_list.push({tag_name:tag.trim(),tag_type:current,select:true})
       this.data.tag_all.nv_push({tag_name: tag.trim(), tag_type: current, select: true});
     }
     this.setData({

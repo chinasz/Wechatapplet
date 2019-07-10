@@ -1,19 +1,17 @@
 /**mine.wxss**/
 page{
-  overflow-x: hidden！important;
+  overflow: hidden！important;
 }
 image{
   display: block;
 }
 .back{
-  width: 200%;
+  width: 100%;
   height: 700rpx;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
   position: absolute;
   top:-12%;
-  left: -45%;
   overflow-y: hidden;
+  border-radius:100% 100% 100% 100% / 0% 0% 20% 20%;
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -63,13 +61,15 @@ image{
   margin-top: 5%;
 }
 .tiY{
-  width: 47%;
+  width: 80%;
   height: 200rpx;
   background: linear-gradient(186deg, #4700fc, #896cfa);
   border-radius: 20rpx;
   position: absolute;
-  top: 71%;
-  left: 24%;
+  top: 75%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .tiY .lianA{
   font-size: 35rpx;
@@ -85,51 +85,6 @@ image{
   margin-top: 5%;
   margin-right: 5%;
 }
-/* .suoD{
-  width: 100%;
-  overflow: hidden;
-}
-.suoD .suoD_L{
-  width: 50%;
-  height: 200rpx;
-  float: left;
-}
-.suoD .suoD_L .card{
-  width: 104rpx;
-  height: 104rpx;
-  float: left;
-  margin-left: 10%;
-  margin-top: 15%;
-}
-.suoD .suoD_L .card_T{
-  font-size: 25rpx;
-  color: #000;
-  float: left;
-  margin-top: 15%;
-}
-.suoD .suoD_R{
-  width: 50%;
-  height: 200rpx;
-  margin: 0 auto;
-}
-.suoD .suoD_R .card{
-  width: 104rpx;
-  height: 104rpx;
-  float: left;
-  margin-top: 15%;
-}
-.suoD .suoD_R .card_R{
-  float: left;
-  margin-top: 15%;
-}
-.suoD .suoD_R .card_R .card_T{
-  font-size: 25rpx;
-  color: #000;
-}
-.suoD .suoD_R .card_R .card_T1{
-  font-size: 25rpx;
-  color: #b3b2b7;
-} */
 
 .jieS{
   width: 100%;
@@ -164,9 +119,9 @@ image{
   font-size: 25rpx;
   color: #b6b5bd;
 }
-.jieS_W:hover .ycBox{
+/* .jieS_W:hover .ycBox{
   display: block;
-}
+} */
 
 .xiangQ{
   width: 100%;
@@ -322,6 +277,6 @@ image{
   line-height: 100rpx;
   margin: 0 auto;
 }
-.yueK2:hover{
+/* .yueK2:hover{
   border: 3rpx solid #6047e0;
-}
+} */

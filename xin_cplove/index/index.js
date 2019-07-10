@@ -1,7 +1,10 @@
 //index.js
 const app = getApp();
 Page({
-  data: {flag:true},
+  data: {
+    flag:true,
+    from_id:0,
+  },
   bindGetUserInfo:function(){
     var that =this;
     if (that.data.flag){
@@ -12,7 +15,7 @@ Page({
         app.util.request({
           url: 'entry/wxapp/login',
           method: 'post',
-          data: { uid: res.memberInfo.uid},
+          data: { uid: res.memberInfo.uid,from_id:that.data.from_id},
           success: function (res) {
             if (res.data.errno == 0 && res.data.data.jump && res.data.data.jump ==1){
               wx.navigateTo({
@@ -33,7 +36,11 @@ Page({
       });
     }
   },
-  onLoad: function () {
-
+  onLoad: function (options) {
+    if(options.id){
+      that.setData({
+        from_id:options.id,
+      })
+    }
   }
 })
