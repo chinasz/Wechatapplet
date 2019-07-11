@@ -202,6 +202,7 @@ image{
   color:#fff;
   margin: auto;
   font-size: 40rpx;
+  line-height: 300rpx;
 }
 .myRecode .recode .maF{
   margin-top: 30%;
