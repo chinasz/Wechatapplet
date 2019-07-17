@@ -1,9 +1,9 @@
 <!--familiar.wxml-->
 <!-- <view class='guanY'>关于一周CP App端账号封禁</view> -->
 <block wx:if="{{article_list}}" wx:for="{{article_list}}" wx:for-item="art" wx:key="">
-  <view class='fengH'>
+  <view class='fengH' bindtap='familiar' data-index="{{index}}">
     <text class='tex'>{{art.title}}</text>
-    <text class='tex1'>></text>
+    <image src="../image/zhanK.png" style='width:15rpx;height:25rpx;float:right;'></image>
   </view>
 </block>
 <button class='lianX' open-type="contact" >联系客服</button>

@@ -2,7 +2,8 @@
 const app = getApp();
 Page({
   data: {
-    member:null
+    member:null,
+    meal:null,
   },
   redirect:(e)=>{
     wx.navigateTo({
@@ -39,15 +40,27 @@ Page({
       method:'post',
       data:{},
       success:function(res){  
-        wx.setStorageSync('currentMember', res.data.data); 
         that.setData({
           member: res.data.data
         })
       }
     })
   },
+  getmeal:function(){
+    var that = this;
+    app.util.request({
+      url:'entry/wxapp/ucmeal',
+      method:'post',
+      success:function(res){
+        that.setData({
+          meal:res.data.data
+        })
+      }
+    })
+  },
   onLoad: function () {
     this.memberDetail();
+    this.getmeal();
   },
   onShow:function(){
     var that = this;

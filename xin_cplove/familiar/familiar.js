@@ -16,6 +16,13 @@ Page({
       }
     })
   },
+  familiar:function(e){
+    if (this.data.article_list[e.currentTarget.dataset.index]){
+      wx.navigateTo({
+        url: './familiar2?param=' + JSON.stringify(this.data.article_list[e.currentTarget.dataset.index]),
+      })
+    }
+  },
   onLoad: function () {
     this.getarticle();
   }

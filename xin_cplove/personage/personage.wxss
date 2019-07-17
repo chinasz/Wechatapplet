@@ -34,7 +34,7 @@ page{
   width: 130rpx;
   height: 60rpx;
   border-radius: 30rpx;
-  background: rgba(77, 63, 125, .5);
+  background: rgba(77, 63, 125);
   font-size: 30rpx;
   color: #FFF;
   text-align: center;
@@ -79,10 +79,10 @@ page{
   overflow: hidden;
 }
 .casetitle .title{
-  font-size: 14px;
+  font-size: 35rpx;
 }
 .casetitle .edit{
-  font-size:12px;
+  font-size:30rpx;
   color:#614af2;
 }
 .casecontent{
@@ -90,34 +90,44 @@ page{
   overflow: hidden;
 }
 .casecontent .textline{
-  font-size:12px; 
+  font-size:30rpx; 
   overflow: hidden;
+}
+.casecontent .textline .unlock-wenum{
+  background: linear-gradient(270deg, #4700fc, #896cfa);
+  height: 50rpx;
+  width:150rpx;
+  border-radius: 20rpx; 
+  color:#FFF;
+  padding:10rpx 0;
+  text-align: center;
+  margin-left:20rpx; 
 }
 .basedata .casecontent .textline:not(:first-child){
   margin-top:10px;
 }
 .label-title{
-  font-size: 14px;
+  font-size: 42rpx;
 }
 .label{
   height:35rpx;
   font-size:28rpx;
   padding:15rpx 30rpx;
   border-radius:50rpx;
-  color: #7c4af2e0;
-  background-color:#f1ededaf; 
+  color: #7c4af2;
+  background-color:#e0e0e0; 
   line-height: 35rpx;
   margin-right: 10rpx;
   margin-top: 10rpx;
 }
 .question{
-  font-size:13px; 
+  font-size:35rpx; 
   text-indent: 20px;
 }
 .answer{
-  font-size: 12px;
+  font-size: 30rpx;
   padding:15px;
-  background-color:#ebe5e562;
+  background-color:#ebe5e5;
   margin: 10px 0;
   border-radius: 10rpx;
 }
@@ -129,7 +139,7 @@ page{
   margin: 0 auto;
 }
 .casecontent .none{
-  font-size:12px;
+  font-size:30rpx;
   text-align: center;
   padding: 10px 0;
   color: #bab9be;
@@ -137,7 +147,7 @@ page{
 }
 .audio .casecontent{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   justify-items: center;
 }
 .btn{
@@ -147,20 +157,7 @@ page{
 .desc{
   width: 100%;
   margin-top:10rpx;
-  font-size:12px;
+  font-size:30rpx;
   color:#bab9be; 
   text-align: center;
-}
-
-#triangle-right{
-  width:0;
-  height:0;
-  border-top:8px solid transparent;
-  border-bottom:8px solid transparent;
-  border-left:12px solid #FFF;
-  position: relative;
-  margin:0 auto;
-  left:0;
-  right:0;
-  top:12px;
 }

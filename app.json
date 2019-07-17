@@ -1,10 +1,10 @@
 {
   "pages": [
+    "xin_cplove/activity/activity",
     "xin_cplove/index/index",
     "xin_cplove/logs/logs",
     "xin_cplove/birthday/birthday",
     "xin_cplove/site/site",
-    "xin_cplove/activity/activity",
     "xin_cplove/mine/mine",
     "xin_cplove/material/material",
     "xin_cplove/tone/tone",
@@ -16,6 +16,7 @@
     "xin_cplove/answer/answer",
     "xin_cplove/report/report",
     "xin_cplove/familiar/familiar",
+    "xin_cplove/familiar/familiar2",
     "xin_cplove/heartbeat/heartbeat",
     "xin_cplove/personage/personage"
   ],

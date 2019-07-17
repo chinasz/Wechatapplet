@@ -3,7 +3,7 @@
   <image class='sxT' src='../image/shaixuan.png'></image>
 </view>
 <view class='wenZ'>心动区</view>
-<view class='heartbeat' bindtap='go'>
+<view class='heartbeat' bindtap='go' data-url="../heartbeat/heartbeat">
   <image class='jiantou' src='../image/jiantou.png'></image>
   <block wx:if="{{heart}}" wx:for="{{heart}}" wx:for-item="h" wx:key="">
     <image class='touxiang' src='{{h.member_avatar}}'></image>
@@ -12,7 +12,7 @@
 
 <image class='dingB' src='../image/ding.png'></image>
 <view class='beiJing'>
-  <image class='logo' src='../image/5logo.png'></image>
+  <image class='logo' src='../image/logo.png'></image>
 </view>
 <image class='back' src='../image/ding.png'></image>
 <view class="myRecode">
@@ -20,32 +20,36 @@
   <view class="recode"></view>
   <view class="recode"></view>
   <block wx:if="{{prefect}}">
-    <block wx:if="{{prefect.time}}">
-      <view class="recode" id="recode" bindtap='flush'>
-        <text class='maF'>立即刷新</text>
-        <text class='tui-countdown-content'>
-          {{time}}
-        </text>
+    <block wx:if="{{!!prefect.time}}">
+      <view class="recode" bindtap='flush'>
+        <view class="flush">
+          <text class="flush-txt flush-font">立即刷新</text>
+          <text class="flush-txt">{{time}}</text>
+        </view>
       </view>
     </block>
     <block wx:else>
-      <view class="recode" id="recode">
-        <image src="{{prefect.member_avatar}}"></image>
-        <text style="font-size:80rpx;color:#fff;" bindtap='attract'>√</text>
+      <view class="recode">
+        <image src="{{prefect.member_avatar}}" bindtap='go' data-url="../personage/personage?id={{prefect.member_id}}"></image>
+      </view>
+      <view class='pair_op'>
+        <image src="{{opimg.heart_img?opimg.heart_img:'../image/hate.png'}}" class="op" bindtap='attract' data-op="hate"></image>
+        <image src="{{opimg.hate_img?opimg.hate_img:'../image/love.png'}}" class='op' bindtap='attract' data-op="love"></image>
       </view>
     </block>
   </block>
   <block wx:else>
     <view class="recode" id="recode">
-      <text>暂无匹配结果</text>
+      <view class="flush">
+        <text class="flush-txt">暂无匹配结果</text>
+      </view>
     </view>
   </block>
 </view>
 <image class='candidate' src='../image/houX.png'></image>
-<view class='text'>(本周五晚8点开始确定CP)</view>
 
-<view wx:if="{{mutual}}" class='bottom_T'>
+<view wx:if="{{mutual.length >0 }}" class='bottom_T'>
   <block wx:for="{{mutual}}" wx:for-item="love" wx:key="">
-    <image class='bottom_Tx' src='{{love.member_avatar}}'></image>
+    <image class='bottom_Tx' src='{{love.member_avatar}}' bindtap='go' data-url="../personage/personage?id={{love.member_id}}"></image>
   </block>
 </view>

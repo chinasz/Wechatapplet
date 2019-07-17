@@ -1,0 +1,8 @@
+<view class='familiar'>
+  <view class="title">
+    {{familiar.title}}
+  </view>
+  <view class='content'>
+    {{familiar.content}}
+  </view>
+</view>

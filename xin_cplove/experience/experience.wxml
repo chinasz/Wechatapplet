@@ -9,7 +9,6 @@
       </block>
     </swiper>
   </image>
-
   <view class='tab'>
     <view class='tab_L {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>体验卡</view>
     <view class='tab_R {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>免费获取</view>

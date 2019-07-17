@@ -19,13 +19,13 @@
     <view class="showcase basedata">
       <view class="casetitle">
         <view class="title pull-left">基础资料</view>
-        <view class="edit pull-right" bindtap='go' data-url="../material/material">去编辑</view>
+        <view wx:if="{{uc.self}}" class="edit pull-right" bindtap='go' data-url="../material/material">去编辑</view>
       </view>
       <view class="casecontent">
-        <view class="textline">
+        <!-- <view class="textline">
           <text space="emsp">家  乡:</text>
           <text class="marginleft40">北京北京</text>
-        </view>
+        </view> -->
         <view class="textline">
           <text space="emsp">学  校:</text>
           <text class="marginleft40">{{uc.member_school?uc.member_school:'未填写'}}</text>
@@ -34,30 +34,30 @@
           <text>学籍状态:</text>
           <text class="marginleft40">{{workselect[uc.member_job-1]?workselect[uc.member_job-1]:'未填写'}}</text>
         </view>
+        <view class="textline">
+          <view class='pull-left' style="line-height:70rpx;height:70rpx;">
+            <text space="ensp">微 信 号:</text>
+            <text class="marginleft40">{{uc.member_wenum === false? '***': (uc.member_wenum?uc.member_wenum:'未填写')}}</text>
+          </view>
+          <view wx:if="{{uc.member_wenum === false}}" class='unlock-wenum pull-left' bindtap='unlock_we'>立即解锁</view>
+        </view>
       </view>
     </view>
-
 
     <view class="whitespce10" style="background-color:#eee;"></view>
     <view class="showcase audio">
       <view class="casetitle">
         <view class="title pull-left">音色测评</view>
-        <view class="edit pull-right" bindtap='go' data-url="../tone/tone">去上传</view>
+        <view wx:if="{{uc.self}}" class="edit pull-right" bindtap='go' data-url="../tone/tone">去上传</view>
       </view>
-      <view class="casecontent" wx:if="{{uc.audio_path}}">
+      <view class="casecontent" wx:if="{{uc.audio_path}}" bindtap='audio_play'>
         <view class='textline btn'>
-          <view class='btn-radius'>
-            <view id="triangle-right"></view>
-          </view>
+          <image class='btn-radius' src="{{audio_status === true?'../image/audiostop.png':'../image/audioplay.png'}}"></image>
           <view class='pull-left desc'>点击试听</view>
         </view>
         <view class='textline btn'>
-          <view class='btn-radius'></view>
-          <view class='pull-left desc'>重新上传</view>
-        </view>
-        <view class='textline btn'>
-          <view class='btn-radius'></view>
-          <view class='pull-left desc'>点击试听</view>
+          <image src="../image/again.png" class='btn-radius' bindtap='go' data-url="../tone/tone"></image>
+          <view wx:if="{{uc.self}}" class='pull-left desc'>重新上传</view>
         </view>
       </view>
       <view wx:else class="casecontent">
@@ -69,20 +69,20 @@
     <view class="showcase basedata">
       <view class="casetitle">
         <view class="title pull-left">个性标签</view>
-        <view class="edit pull-right" bindtap='go' data-url="../label/label">去添加</view>
+        <view wx:if="{{uc.self}}" class="edit pull-right" bindtap='go' data-url="../label/label">去添加</view>
       </view>
       <block wx:if="{{uc.tag}}">
-      <view class="casecontent" wx:for="{{uc.tag2}}" wx:for-item="type" wx:key="this">
-        <view wx:if="{{type.tag}}" class='textline'>
-          <view class="label-title">{{type.tag_name}}</view>
-          <view wx:for="{{type.tag}}" wx:for-item="tag" wx:key="" class="label pull-left">{{tag.tag_name}}</view>
+        <view class="casecontent" wx:for="{{uc.tag2}}" wx:for-item="type" wx:key="this">
+          <view wx:if="{{type.tag}}" class='textline'>
+            <view class="label-title">{{type.tag_name}}</view>
+            <view wx:for="{{type.tag}}" wx:for-item="tag" wx:key="" class="label pull-left">{{tag.tag_name}}</view>
+          </view>
         </view>
-      </view>
       </block>
       <block wx:else>
-      <view class='casecontent'>
-        <view class="none">暂时还未添加自己的个性标签</view>
-      </view> 
+        <view class='casecontent'>
+          <view class="none">暂时还未添加自己的个性标签</view>
+        </view>
       </block>
     </view>
 
@@ -90,18 +90,18 @@
     <view class="showcase basedata">
       <view class="casetitle">
         <view class="title pull-left">走心回答</view>
-        <view class="edit pull-right" bindtap='go' data-url="../mindful/mindful">去回答</view>
+        <view wx:if="{{uc.self}}" class="edit pull-right" bindtap='go' data-url="../mindful/mindful">去回答</view>
       </view>
       <block wx:if="{{uc.answer}}">
-      <view  wx:for="{{uc.answer}}" wx:for-item="answer" wx:key="" class="casecontent">
-        <view class="question">{{answer.question}}</view>
-        <view class='answer'>{{answer.answer}}</view>
-      </view>
+        <view wx:for="{{uc.answer}}" wx:for-item="answer" wx:key="" class="casecontent">
+          <view class="question">{{answer.question}}</view>
+          <view class='answer'>{{answer.answer}}</view>
+        </view>
       </block>
       <block wx:else>
-      <view class='casecontent'>
-        <view class="none">暂未回答任何走心问答</view>
-      </view>
+        <view class='casecontent'>
+          <view class="none">暂未回答任何走心问答</view>
+        </view>
       </block>
     </view>
     <view class="whitespce10"></view>

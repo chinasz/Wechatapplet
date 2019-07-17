@@ -4,7 +4,7 @@ Page({
   data: {
     member:null,
     temname:null,
-    times: { start: "1970-01-01", end: new app.util.date().dateToStr('yyyy-MM-dd') },
+    times: { start: new app.util.date().dateToStr('yyyy-MM-dd', new app.util.date().dateAdd('y', -40)), end: new app.util.date().dateToStr('yyyy-MM-dd', new app.util.date().dateAdd('y', -17)) },
     update:{},
     hiddenmodalput1: true,
     submit:false,
@@ -54,7 +54,6 @@ Page({
             update : that.data.update,
             submit : true
           })
-
         }
       }
     })

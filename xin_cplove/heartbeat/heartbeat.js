@@ -4,13 +4,17 @@ Page({
   data: {
     heartgirl:null,
   },
+  go: function (e) {
+    wx.navigateTo({
+      url: e.currentTarget.dataset.url,
+    })
+  }, 
   getheart:function(){
     var that = this;
     app.util.request({
       url:'entry/wxapp/heart',
       data:{},
       method:'post',
-      cachetime:30,
       success:function(res){
         that.setData({
           heartgirl:res.data.data

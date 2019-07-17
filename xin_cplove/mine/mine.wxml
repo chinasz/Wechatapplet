@@ -2,7 +2,7 @@
 <block wx:if="{{member}}">
 <image class='back' src='../image/back.png'>
   <view class='tiY' bindtap='redirect' data-url="../experience/experience">
-    <view class='lianA'>恋爱体验卡</view>
+    <view class='lianA'>{{!!meal.cpcard?meal.cpcard:'恋爱体验卡'}}</view>
     <view class='zhanK'>></view>
   </view>
 </image>
@@ -58,35 +58,35 @@
 
   <view class='xiangQ' bindtap='redirect' data-url="../material/material">
     <image class='geR' src='../image/geR.png'></image>
-    <view class='text'>个人资料</view>
+    <view class='text'>{{!!meal.mydata?meal.mydata:'个人资料'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
   <view class='xiangQ' bindtap='redirect' data-url="../tone/tone">
     <image class='geR' src='../image/yinS.png'></image>
-    <view class='text'>音色测评</view>
+    <view class='text'>{{!!meal.myaudio?meal.myaudio:'音色测评'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
   <view class='xiangQ' bindtap='redirect' data-url="../label/label">
     <image class='geR' src='../image/biaoQ.png'></image>
-    <view class='text'>个性标签</view>
+    <view class='text'>{{!!meal.mylabel?meal.mylabel:'个性标签'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
   <view class='xiangQ' bindtap='redirect' data-url="../mindful/mindful">
     <image class='geR' src='../image/QQQ.png'></image>
-    <view class='text'>走心问答</view>
+    <view class='text'>{{!!meal.myanswer?meal.myanswer:'走心问答'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
   <view class='xiangQ' bindtap='redirect' data-url="../predilection/predilection">
     <image class='geR' src='../image/shaiX.png'></image>
-    <view class='text'>偏好设置</view>
+    <view class='text'>{{!!meal.like?meal.like:'偏好设置'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
   <view class='xiangQ' bindtap='redirect' data-url="../feedback/feedback">
     <image class='geR' src='../image/help.png'></image>
-    <view class='text'>帮助与反馈</view>
+    <view class='text'>{{!!meal.feedback?meal.feedback:'帮助与反馈'}}</view>
     <image class='zhanK' src='../image/zhanK.png'></image>
   </view>
 
-  <view class='quX' bindtap='cancel'>取消本期报名</view>
+  <view class='quX' bindtap='cancel'>{{!!meal.cancel?meal.cancel:'取消本期报名'}}</view>
 </view>
 </block>

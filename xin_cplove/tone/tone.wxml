@@ -2,23 +2,23 @@
 <view class='dingB'>
   <image class='shu' src='../image/shu.png'></image>
   <text class='tex'>想知道你的音色是什么吗？</text>
-  <view class='dianJ'>换一个</view>
+  <view class='dianJ' bindtap='change'>换一个</view>
 </view>
 
 <view class='text'>
   <view class='text_W'>
     <view class='text_T'>
-      尝试念一下一下文字
+      {{font[fonttitle].title}}
     </view>
     <view class='taiC'>
-      尔康，你告诉我，一个破碎的我，怎么来帮助一个破碎的你呀？
+      {{font[fonttitle].word[fontword]}}
     </view>
   </view>
 </view>
 
 <view class='zhongJ'>
   <view class="myRecode">
-    <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd' bindtap="getau">
+    <view class="recode" catchtouchstart='recodeClick' catchtouchend='recodeEnd'>
       <image class='mai' src='../image/mai.png'></image>
       <view class="ripple"></view>
       <view class="ripple" animation="{{animationData1}}"></view>

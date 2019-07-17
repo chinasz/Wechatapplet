@@ -38,7 +38,7 @@ Page({
   },
   onLoad: function (options) {
     if(options.id){
-      that.setData({
+      this.setData({
         from_id:options.id,
       })
     }

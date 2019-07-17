@@ -9,7 +9,7 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"nodeModules": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"coverView": true
@@ -42,7 +42,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -69,6 +69,14 @@
 					"id": -1,
 					"name": "主页",
 					"pathName": "xin_cplove/personage/personage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "邀请登录",
+					"pathName": "xin_cplove/index/index",
+					"query": "id=1048576",
 					"scene": null
 				}
 			]

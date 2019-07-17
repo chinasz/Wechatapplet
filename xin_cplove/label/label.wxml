@@ -12,10 +12,17 @@
     <view class='dianJ' bindtap="modalinput1">
       +
     </view>
-    <block wx:if="{{tag_list}}" wx:for="{{tag_list}}" wx:for-item="tag" wx:for-index="index" wx:key="this">
-    <view wx:if="{{tag}}" class="dianJ {{tag.select===true ? 'select' :''}}" data-key="{{index}}" bindtap='selecttag'>
+    <block wx:if="{{tag_all.length>0}}" wx:for="{{tag_all}}" wx:for-item="tag" wx:for-index="index" wx:key="this">
+    <block wx:if="{{current > 0}}">
+    <view wx:if="{{tag && tag.tag_type == current}}" class="dianJ {{tag.select===true ? 'select' :''}}" data-key="{{index}}" bindtap='selecttag'>
       {{tag.tag_name}}
     </view>
+    </block>
+    <block wx:else>
+      <view wx:if="{{tag}}" class="dianJ {{tag.select===true ? 'select' :''}}" data-key="{{index}}" bindtap='selecttag'>
+      {{tag.tag_name}}
+    </view>
+    </block>
     </block>
   </view>
 </view>

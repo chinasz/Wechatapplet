@@ -1,10 +1,7 @@
 const app = getApp();
 Page({
   data: {
-    imgUrls: [
-      '../image/1.png',
-      '../image/2.png'
-    ],
+    imgUrls: [],
     indicatorDots: true, // 是否显示面板指示点
     autoplay: true, // 是否自动切换
     circular: true, // 是否采用衔接滑动
@@ -29,6 +26,7 @@ Page({
           vip:res.data.data.vip,
           share:res.data.data.share,
           mid:res.data.data.id,
+          imgUrls: res.data.data.slider
         })
       }
     })

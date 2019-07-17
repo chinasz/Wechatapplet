@@ -1,0 +1,12 @@
+.familiar{
+  padding: 0 40rpx;
+}
+.familiar .title{
+  font-size: 45rpx;
+  margin: 30rpx 0;
+  color: rgba(4, 130, 247, 0.637);
+}
+.familiar .content{
+  font-size: 25rpx; 
+  color: rgba(156, 156, 156, 0.9); 
+}
