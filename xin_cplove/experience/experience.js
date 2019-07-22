@@ -12,6 +12,7 @@ Page({
     vip:null,
     share:null,
     mid:0,
+    ios_pay:0,
   },
   getmeal: function() {
     var that = this;
@@ -26,7 +27,8 @@ Page({
           vip:res.data.data.vip,
           share:res.data.data.share,
           mid:res.data.data.id,
-          imgUrls: res.data.data.slider
+          imgUrls: res.data.data.slider,
+          ios_pay:res.data.data.ios_pay
         })
       }
     })
@@ -40,6 +42,21 @@ Page({
   recharge: function() {
     //充值会员
     var that = this;
+    try{
+      var system = wx.getSystemInfoSync();
+      if (system.system.indexOf('iOS') > -1 && that.data.ios_pay == 0){
+        wx.showModal({
+          title: '系统提示',
+          content: '暂不支持ios用户',
+          showCancel:false,
+        })
+        return;
+      }
+    }catch(e){
+      return wx.showToast({
+        title: '设备信息获取失败，请重试',
+      })
+    }
     if (that.data.card_list[that.data.select] && that.data.card_list[that.data.select].id) {
       app.util.request({
         url: 'entry/wxapp/recharge',

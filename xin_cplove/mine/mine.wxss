@@ -57,8 +57,8 @@ image{
   line-height: 80rpx;
   font-size: 30rpx;
   color: #FFF;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
 }
 .tiY{
   width: 80%;

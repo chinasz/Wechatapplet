@@ -1,5 +1,6 @@
 {
   "pages": [
+    "xin_cplove/start/start",
     "xin_cplove/activity/activity",
     "xin_cplove/index/index",
     "xin_cplove/logs/logs",
@@ -18,12 +19,13 @@
     "xin_cplove/familiar/familiar",
     "xin_cplove/familiar/familiar2",
     "xin_cplove/heartbeat/heartbeat",
-    "xin_cplove/personage/personage"
+    "xin_cplove/personage/personage",
+    "xin_cplove/mall/mall"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

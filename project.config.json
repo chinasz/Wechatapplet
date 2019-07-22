@@ -9,13 +9,14 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"nodeModules": false,
+		"nodeModules": true,
 		"autoAudits": false,
+		"uglifyFileName": true,
 		"checkInvalidKey": true,
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.6",
+	"libVersion": "2.7.5",
 	"appid": "wxe4b95efa4a3c6783",
 	"projectname": "Wechatapplet",
 	"debugOptions": {
@@ -24,6 +25,11 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -42,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -77,6 +83,13 @@
 					"name": "邀请登录",
 					"pathName": "xin_cplove/index/index",
 					"query": "id=1048576",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "商城页",
+					"pathName": "xin_cplove/mall/mall",
+					"query": "",
 					"scene": null
 				}
 			]

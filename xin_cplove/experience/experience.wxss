@@ -1,6 +1,6 @@
 /*experience.wxss*/
 page{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 image{
   display: block;
@@ -76,7 +76,7 @@ image{
   background: #f5f5f5;
 }
 .yueK .yueK2.select{
-  border:1rpx solid #614af0;
+  border:1px solid #614af0;
 }
 .yueK .yueK2 .tex1{
   font-size: 35rpx;

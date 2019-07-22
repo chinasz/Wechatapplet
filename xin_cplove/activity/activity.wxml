@@ -30,7 +30,7 @@
     </block>
     <block wx:else>
       <view class="recode">
-        <image src="{{prefect.member_avatar}}" bindtap='go' data-url="../personage/personage?id={{prefect.member_id}}"></image>
+        <image mode='scaleToFill' src="{{prefect.member_avatar}}" bindtap='go' data-url="../personage/personage?id={{prefect.member_id}}"></image>
       </view>
       <view class='pair_op'>
         <image src="{{opimg.heart_img?opimg.heart_img:'../image/hate.png'}}" class="op" bindtap='attract' data-op="hate"></image>

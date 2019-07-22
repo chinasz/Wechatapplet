@@ -1,7 +1,7 @@
 <!--heartbeat.wxml-->
 <block wx:for="{{heartgirl}}" wx:for-index="i" wx:for-item="heart" wx:key="k">
 <view class='first' bindtap='go' data-url="../personage/personage?id={{heart.member_id}}">
-  <image class='xinD' src='{{heart.member_avatar}}'></image>
+  <image class='xinD' mode="scaleToFill" src='{{heart.member_avatar}}'></image>
   <view class='tex'>
     <view class='niC'>{{heart.member_nickname}}</view>
     <view class='shiJ'>{{heart.update_time}}前 加入了心动区</view>

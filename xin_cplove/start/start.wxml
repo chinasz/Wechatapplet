@@ -1,0 +1,2 @@
+<!--xin_cplove/start/start.wxml-->
+<view class='cover' style="background:url({{bg}}) no-repeat;background-size:cover;"></view>
