@@ -1,0 +1,14 @@
+<!--xin_cplove/mall/detail.wxml-->
+<swiper class="nav" style="width:{{screenWidth}}px;height:{{screenWidth}}px">
+    <swiper-item class="item">
+        <image bindtap="previewImage" class="img" src="{{goods.goods_thumb}}" style="width:{{screenWidth}}px;height:{{screenWidth}}px"></image>
+    </swiper-item>
+</swiper>
+<view class="goods">
+    <view class="between" >
+        <view class="price">￥{{goods.goods_price}}</view>
+    </view>
+    <view class="goodsname">{{goods.goods_title}}</view>
+</view>
+<view class="line"></view>
+<view class="buy">喜欢此商品请到店购买</view>

@@ -1,0 +1,31 @@
+<!--xin_cplove/mall/index.wxml-->
+<view wx:if="{{page.status == 1}}">
+  <swiper autoplay="true" duration="500" interval="5000">
+    <swiper-item>
+      <image class="ads" src="{{page.banner}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="notice between">
+    <view class="noticeL  flex row">
+      <image class="noticead" src="{{page.icon}}"></image>
+      <view class="Ntitle ">
+        <view>{{page.notice}}</view>
+        <view>{{page.notice_desc}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="goodslist">
+    <view bindtap="details" class="goods" data-id="{{index}}" wx:for="{{goods}}" wx:key="this" bindtap='detail'>
+      <image mode="widthFix" src="{{item.goods_thumb}}"></image>
+      <view class="goodsdetail">
+        <view class="goodsName">
+          {{item.goods_name}}
+        </view>
+        <view class="price between">
+          <view>￥{{item.goods_price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
